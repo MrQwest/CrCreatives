@@ -34,11 +34,10 @@ ol, ul {
 }
 blockquote, q {
 	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+	&:before, &:after {
+		content: "";
+		content: none;
+	}
 }
 table {
 	border-collapse: collapse;
@@ -73,7 +72,6 @@ body {
 }
 
 section, header {
-	background-color: rgba(255,255,255,.8);
 	padding: 1.5em;
 	width: 96%;
 	max-width: 40em;
@@ -82,7 +80,8 @@ section, header {
 	border-left: 1px solid rgba(255,255,255,1);
 	box-shadow: 0 0 .7em rgba(0,0,0,.3);
 	border-radius: .19em;
-	background-image: url(../images/stuccobg.png);
+	background-color: rgba(255,255,255,.8);
+    background-image: url(../images/stuccobg.png);
 }
 
 img#branding {
@@ -102,15 +101,15 @@ header {
 		font-family: "adelle", serif;
 		border-top: 1px dotted rgba(0,0,0,.6);
 		padding: 1em 0 0;
-	}
-	nav ul.mainnav li {
-		display: inline;
-		padding-left: .8em;
-		line-height: 1.8em;
-		&:first-child {
-			padding-left: 0;
+        ul.mainnav li {
+			display: inline;
+			padding-left: .8em;
+			line-height: 1.8em;
+			&:first-child {
+				padding-left: 0;
+			}
 		}
-		a {
+        a {
 			color: rgba(0,0,0,.6);
 			text-decoration: none;
 			border-bottom: 1px solid rgba(0,0,0,.6);
@@ -136,7 +135,7 @@ header {
 		font-size: 2em;
 		color: rgba(255,255,255,.4);
 		span {
-			font-family: "adelle",serif;
+			font-family: "adelle", serif;
 			font-size: .9em;
 			font-weight: bold;
 			color: rgba(255,255,255,.9);
@@ -150,7 +149,7 @@ section {
 	text-shadow: 1px 1px 0 rgba(255,255,255,.4);
  	h1 {
 		font-size: 1.6em;
-		font-family: "adelle",serif;
+		font-family: "adelle", serif;
 		font-weight: bold;
 		padding-bottom: .5em;
 	}
@@ -160,7 +159,7 @@ section {
 		line-height: 1.6em;
 		color: rgba(0,0,0,.85);
 		&:last-child {
-			padding-bottom: 0em;
+			padding-bottom: 0;
 		}
 	}
 	a {
