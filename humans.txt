@@ -7,8 +7,11 @@
 	Design: Steve Rydz
 	Twitter: @steverydz
 	
-	Additional Code: Mike Street
+	Additional Code (attendance array): Mike Street
 	twitter: @mikestreety
+
+	Additional Code (Google Maps): James Broad
+	twitter: @kulor
 	
 /* SITE */
 	Language:English
