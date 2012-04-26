@@ -106,13 +106,16 @@ header {
 	}
 	nav ul.mainnav li {
 		display: inline;
-		padding-right: .8em;
+		padding-left: .8em;
 		line-height: 1.8em;
+		&:first-child {
+			padding-left: 0;
+		}
 		a {
 			color: rgba(0,0,0,.6);
 			text-decoration: none;
 			border-bottom: 1px solid rgba(0,0,0,.6);
-			-webkit-transition: all 0.2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
 			&:hover {
 				color: darken(@yellow,70%);
 			}

@@ -172,8 +172,11 @@ header nav {
 }
 header nav ul.mainnav li {
   display: inline;
-  padding-right: .8em;
+  padding-left: .8em;
   line-height: 1.8em;
+}
+header nav ul.mainnav li:first-child {
+  padding-left: 0;
 }
 header nav ul.mainnav li a {
   color: rgba(0, 0, 0, 0.6);
