@@ -9,6 +9,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CroydonCreativ.es</title>
+	<script type="text/javascript">
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/\bno-js\b/,'') + ' js';
+    </script>
 	<meta name="description" content="An open & informal community of designers, developers & digital creatives from in & around Croydon who fancy a break from the screen and chat the web, print, typography & design.">
 	<meta name="author" content="MrQwest and Croydon Creatives">
 
@@ -19,6 +23,7 @@
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/map.css" media="all" />
 	
 	<!-- For iPhone 4 -->
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
@@ -74,6 +79,7 @@
 	
 	<section id="where">
 		<h1>Where?</h1>
+		<div id="map_canvas"></div>
 			<p>In our search for a regular venue, we've happened across two decent establishments so we'll alternate between the two. This month, we're meeting at <a href="http://www.porterandsorterpub.co.uk/" title="The Porter and Sorter">The Porter & Sorter</a>, Billington Road, Croydon, <a href="http://g.co/maps/kjzx6" title="Google maps">CR0 6BT</a>.</p>
 
 			<p>If you're traveling by train, aim for East Croydon station (20minutes from Victoria / London Bridge rail stations), come out of the main entrance of the station, turn left and left again. Walk through the taxi rank / pickup area and the pub is at the bottom of the short hill.</p>
@@ -152,6 +158,9 @@
 	<footer>
 		<p class="copyright">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz">Steve Rydz</a><span class="yellowswitch"></span></p>
 	</footer>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+	<script type="text/javascript" src="js/map.js"></script>
 	<script type="text/javascript">
 
   var _gaq = _gaq || [];
