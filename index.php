@@ -24,15 +24,6 @@
 	
 	<link rel="stylesheet" href="css/style.css">
 	
-	<!-- For iPhone 4 -->
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-	<!-- For iPad 1-->
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-	<!-- For iPhone 3G, iPod Touch and Android -->
-	<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-	<!-- For Nokia -->
-	<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
-	
 	<link rel="canonical" href="http://croydoncreativ.es/">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
