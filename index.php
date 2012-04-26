@@ -10,9 +10,9 @@
 	<meta charset="UTF-8">
 	<title>CroydonCreativ.es</title>
 	<script>
-        var docElement = document.documentElement;
-        docElement.className = docElement.className.replace(/\bno-js\b/,'') + ' js';
-    </script>
+		var docElement = document.documentElement;
+		docElement.className = docElement.className.replace(/\bno-js\b/,'') + ' js';
+	</script>
 	<meta name="description" content="An open and informal community of designers, developers and digital creatives from in and around Croydon who fancy a break from the screen and chat the web, print, typography and design.">
 	<meta name="author" content="MrQwest and Croydon Creatives">
 
@@ -33,7 +33,7 @@
 	<script src="http://use.typekit.com/bof8zfa.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 	<script>
-		$.anystretch('images/bg.jpg', {speed:150});	
+		$.anystretch('images/bg.jpg', {speed:150});
 	</script>
 </head>
 <body class="anystretch">
@@ -118,12 +118,11 @@
 		<p>A list of people who've attended previous <strong>Croydon Creative</strong> gatherings.</p>
 		
 		<ul id="attendence">
-		
 		<?php
 			$attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom');
 			Foreach($attendees as $attendee) {
 				?> <li class="attendee"><a href="http://twitter.com/<?=$attendee?>" rel="external"><img src="http://img.tweetimag.es/i/<?=$attendee?>" alt="<?=$attendee?>"></a></li><?php 
-            } ?>
+		} ?>
 		</ul>
 	
 	</section>
@@ -143,10 +142,10 @@
 	<script src="js/map.js"></script>
 
 	<script>
-    	var _gaq=[['_setAccount','UA-23121126-1'],['_trackPageview']];
-    	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    	s.parentNode.insertBefore(g,s)}(document,'script'));
+		var _gaq=[['_setAccount','UA-23121126-1'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
 	</script>
 
 </body>
