@@ -9,7 +9,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CroydonCreativ.es</title>
-	<script type="text/javascript">
+	<script>
         var docElement = document.documentElement;
         docElement.className = docElement.className.replace(/\bno-js\b/,'') + ' js';
     </script>
@@ -23,7 +23,6 @@
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 	
 	<link rel="stylesheet" href="css/style.css" media="all">
-	<link rel="stylesheet" href="css/map.css" media="all">
 	
 	<!-- For iPhone 4 -->
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
@@ -38,14 +37,14 @@
 	
 	<link rel="canonical" href="http://croydoncreativ.es/">
 	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')</script>
-	<script type="text/javascript" src="js/jquery.anystretch.min.js"></script>
-	<script type="text/javascript" src="js/portamento.js"></script>
-	<script type="text/javascript" src="js/crcreatives.js"></script>
-	<script type="text/javascript" src="http://use.typekit.com/bof8zfa.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script type="text/javascript">
+	<script src="js/jquery.anystretch.min.js"></script>
+	<script src="js/portamento.js"></script>
+	<script src="js/crcreatives.js"></script>
+	<script src="http://use.typekit.com/bof8zfa.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script>
 		$.anystretch('images/bg.jpg', {speed:150});	
 	</script>
 </head>
@@ -95,7 +94,7 @@
 		<p>We send out e-mails every now & then to let you know when the next gathering or event will take place. If you want to receive these emails, all we need is your name & email address. The twitter username is just so we can say hello :)</p>
 		
 		<!-- Begin MailChimp Signup Form -->
-		<script type="text/javascript">
+		<script>
 		// delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
 		// or fill this in and it will be inlined when errors are generated
 		var mc_custom_error_style = '';
@@ -127,7 +126,7 @@
 			</fieldset>	
 		</form>
 		</div>
-		<script type="text/javascript" src="js/mailchimp.js"></script>
+		<script src="js/mailchimp.js"></script>
 		<!--End mc_embed_signup-->
 	</section>
 	
@@ -159,10 +158,10 @@
 	<footer>
 		<p class="copyright">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz">Steve Rydz</a><span class="yellowswitch"></span></p>
 	</footer>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-	<script type="text/javascript" src="js/map.js"></script>
-	<script type="text/javascript">
+	<script src="js/map.js"></script>
+	<script>
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-23121126-1']);

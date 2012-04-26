@@ -130,8 +130,8 @@ table {
 /* LESS VARIABLES */
 /* THANK YOU PAUL IRISH! */
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -172,8 +172,11 @@ header nav {
 }
 header nav ul.mainnav li {
   display: inline;
-  padding-right: 1em;
+  padding-left: .8em;
   line-height: 1.8em;
+}
+header nav ul.mainnav li:first-child {
+  padding-left: 0;
 }
 header nav ul.mainnav li a {
   color: rgba(0, 0, 0, 0.6);
@@ -227,6 +230,11 @@ section p:last-child,
 section label:last-child {
   padding-bottom: 0em;
 }
+section a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: #9e3037;
+}
 #jointhelist .mc-field-group {
   line-height: 2em;
   position: relative;
@@ -240,7 +248,11 @@ section label:last-child {
   margin: .24em;
 }
 #attendence li img {
-  -webkit-box-shadow: 0px 0px 7em solid rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: .2em;
+}
+#attendence li a {
+  border: 0;
 }
 footer {
   margin: 0 auto;
@@ -251,9 +263,10 @@ footer {
 }
 footer p {
   font-size: .8em;
+  color: #fff;
 }
 footer a {
-  color: rgba(0, 0, 0, 0.7);
+  color: #fff;
   text-decoration: none;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.6);
   -webkit-transition: all 0.2s ease-in-out;
@@ -268,6 +281,19 @@ footer #missyellow {
   color: #ffd955;
   float: right;
   right: 0;
+}
+/* Google Map */
+.js #map_canvas {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#map-popup-content {
+  min-width: 250px;
+}
+.venue-image {
+  float: right;
+  margin-left: 10px;
 }
 @media screen and (min-width: 601px) and (max-width: 1900px) {
   #jointhelist .mc-field-group {
