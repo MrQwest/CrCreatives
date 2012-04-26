@@ -130,8 +130,8 @@ table {
 /* LESS VARIABLES */
 /* THANK YOU PAUL IRISH! */
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -268,6 +268,19 @@ footer #missyellow {
   color: #ffd955;
   float: right;
   right: 0;
+}
+/* Google Map */
+.js #map_canvas {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#map-popup-content {
+  min-width: 250px;
+}
+.venue-image {
+  float: right;
+  margin-left: 10px;
 }
 @media screen and (min-width: 601px) and (max-width: 1900px) {
   #jointhelist .mc-field-group {
