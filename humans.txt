@@ -13,7 +13,7 @@
 	Additional Code (Google Maps): James Broad
 	twitter: @kulor
 	
-	Additional Optimisation: Phil Wareham
+	Additional Optimisation & code OCD: Phil Wareham
 	twitter: @philwareham
 	
 /* SITE */
