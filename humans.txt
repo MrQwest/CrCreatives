@@ -17,6 +17,6 @@
 	twitter: @philwareham
 	
 /* SITE */
-	Language:English
-	Doctype:HTML5
+	Language: English
+	Doctype: HTML5
 	IDE: Coda, Filezilla, Photoshop
