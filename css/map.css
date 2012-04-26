@@ -1,0 +1,14 @@
+.js #map_canvas {
+  height: 300px;
+  width: 100%;
+  margin-bottom:15px;
+}
+
+#map-popup-content{
+	min-width:250px;
+}
+
+.venue-image{
+	float:right;
+	margin-left:10px;
+}
