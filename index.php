@@ -66,7 +66,7 @@
 	</header>
 	
 	<section id="next">
-		<p>Next: <span>25th April @ 7pm</span></p>
+		<p>Next: <span>30th May @ 7pm</span></p>
 	</section>
 	
 	<section id="about">
