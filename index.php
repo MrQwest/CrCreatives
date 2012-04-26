@@ -1,10 +1,37 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
 <head>
 	<meta charset="UTF-8">
 	<title>CroydonCreativ.es</title>
+	<meta name="description" content="An open & informal community of designers, developers & digital creatives from in & around Croydon who fancy a break from the screen and chat the web, print, typography & design.">
+	<meta name="author" content="MrQwest and Croydon Creatives">
+
+<!-- We're a friendly bunch, why not come down & say hello! -->
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
+	
 	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+	
+	<!-- For iPhone 4 -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+	<!-- For iPad 1-->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+	<!-- For iPhone 3G, iPod Touch and Android -->
+	<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+	<!-- For Nokia -->
+	<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="favicon.ico">
+	
+	<link rel="canonical" href="http://croydoncreativ.es/">
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.anystretch.min.js"></script>
@@ -26,8 +53,9 @@
 				<li><a href="#where">Where</a></li>
 				<li><a href="#jointhelist">Join the List</a></li>
 				<li><a href="#attendees">Attendees</a></li>
-				<li><a href="#gallery">Gallery</a></li>
-				<li><a href="#projects">Projects</a></li>
+				<li><a href="#lanyrd">Lanyrd</a></li>
+				<li><a href="http://twitter.com/crcreatives" title="Follow us on twitter">@CrCreatives</a></li>
+
 			</ul>
 		</nav>
 	</header>
@@ -38,7 +66,7 @@
 	
 	<section id="about">
 		<h1>About</h1>
-		<p>The CroydonCreativ.es is a monthly gathering of web folk from in & around Croydon. An open & informal community of designers, developers & digital creatives who fancy a break from the screen and chat about what we love. Talk about the web, print, typography & design. Talk about music, your hobbies or sport. Come along & have fun with fellow creatives.</p>
+		<p>The CroydonCreativ.es is a monthly gathering of web folk from in & around Croydon & further afield (current record distance travelled to a meet is ~160miles). An open & informal community of designers, developers & digital creatives who fancy a break from the screen and chat about what we love. Talk about the web, print, typography & design. Talk about music, your hobbies or sport. Come along & have fun with fellow creatives.</p>
 
 <p>If you're interested, why don't you come down & join us one evening?</p>
 	
@@ -46,13 +74,13 @@
 	
 	<section id="where">
 		<h1>Where?</h1>
-			<p>In our search for a regular venue, we've happened across two decent establishments so we'll alternate between the two. This month, we're meeting at The Porter & Sorter, Billington Road, Croydon, CR0 6BT.</p>
+			<p>In our search for a regular venue, we've happened across two decent establishments so we'll alternate between the two. This month, we're meeting at <a href="http://www.porterandsorterpub.co.uk/" title="The Porter and Sorter">The Porter & Sorter</a>, Billington Road, Croydon, <a href="http://g.co/maps/kjzx6" title="Google maps">CR0 6BT</a>.</p>
 
 			<p>If you're traveling by train, aim for East Croydon station (20minutes from Victoria / London Bridge rail stations), come out of the main entrance of the station, turn left and left again. Walk through the taxi rank / pickup area and the pub is at the bottom of the short hill.</p>
 
-			<p>If you're coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at this map for locations of the parking in the area & the meeting place.</p>
+			<p>If you're coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at this <a href="http://g.co/maps/ctwpy" title="Parking Map">map</a> for locations of the parking in the area & the meeting place.</p>
 
-			<p>Finally, if you're coming via Tram, you'll want the East Croydon Tram stop. Exit the tram, turn right and walk through the taxi rank / pick up area for East Croydon. The Porter & Sorter is at the bottom of the hill.</p>
+			<p>Finally, if you're coming via Tram, you'll want the East Croydon Tram stop. Exit the tram, walk through the taxi rank / pick up area for East Croydon. The Porter & Sorter is at the bottom of the short hill.</p>
 	</section>
 	
 	<section id="jointhelist">
@@ -102,53 +130,41 @@
 		
 		<ul id="attendence">
 		
-		<li class="attendee">
-			<a href="http://twitter.com/crcreatives"><img src="http://img.tweetimag.es/i/crcreatives" alt="@CrCreatives"></a>
-		</li>
-		
-		<li><a href="http://twitter.com/mrqwest"><img src="http://img.tweetimag.es/i/mrqwest" alt="@mrqwest" /></a></li>
-		<li><a href="http://twitter.com/simianstudios"><img src="http://img.tweetimag.es/i/simianstudios" alt="@simianstudios" /></a></li>
-		<li><a href="http://twitter.com/alexjsexton"><img src="http://img.tweetimag.es/i/alexjsexton" alt="@alexjsexton" /></a></li>
-		<li><a href="http://twitter.com/simoncox"><img src="http://img.tweetimag.es/i/simoncox" alt="@simoncox" /></a></li>
-		<li><a href="http://twitter.com/fulljames"><img src="http://img.tweetimag.es/i/fulljames" alt="@fulljames" /></a></li>
-		<li><a href="http://twitter.com/rchasteauneuf"><img src="http://img.tweetimag.es/i/rchasteauneuf" alt="@rchasteauneuf" /></a></li>
-		<li><a href="http://twitter.com/mikestreety"><img src="http://img.tweetimag.es/i/mikestreety" alt="@mikestreety" /></a></li>
-		<li><a href="http://twitter.com/clivewalker"><img src="http://img.tweetimag.es/i/clivewalker" alt="@clivewalker" /></a></li>
-		<li><a href="http://twitter.com/dynamic50"><img src="http://img.tweetimag.es/i/dynamic50" alt="@dynamic50" /></a></li>
-		<li><a href="http://twitter.com/kevin_davies"><img src="http://img.tweetimag.es/i/kevin_davies" alt="@kevin_davies" /></a></li>
-		<li><a href="http://twitter.com/standardistas"><img src="http://img.tweetimag.es/i/standardistas" alt="@standardistas" /></a></li>
-		<li><a href="http://twitter.com/pauladamdavis"><img src="http://img.tweetimag.es/i/pauladamdavis" alt="@pauladamdavis" /></a></li>
-		<li><a href="http://twitter.com/paulmist"><img src="http://img.tweetimag.es/i/paulmist" alt="@paulmist" /></a></li>
-		<li><a href="http://twitter.com/weshuk"><img src="http://img.tweetimag.es/i/weshuk" alt="@weshuk" /></a></li>
-		<li><a href="http://twitter.com/bossingtonimage"><img src="http://img.tweetimag.es/i/bossingtonimage" alt="@bossingtonimage" /></a></li>
-		<li><a href="http://twitter.com/steverydz"><img src="http://img.tweetimag.es/i/steverydz" alt="@steverydz" /></a></li>
-		<li><a href="http://twitter.com/tarunhari"><img src="http://img.tweetimag.es/i/tarunhari" alt="@tarunhari" /></a></li>
-		<li><a href="http://twitter.com/danblundell"><img src="http://img.tweetimag.es/i/danblundell" alt="@danblundell" /></a></li>
-		<li><a href="http://twitter.com/mkstix6"><img src="http://img.tweetimag.es/i/mkstix6" alt="@mkstix6" /></a></li>
-		<li><a href="http://twitter.com/blinkbrian"><img src="http://img.tweetimag.es/i/blinkbrian" alt="@blinkbrian" /></a></li>
-		<li><a href="http://twitter.com/ayoungh"><img src="http://img.tweetimag.es/i/ayoungh" alt="@ayoungh" /></a></li>
-		<li><a href="http://twitter.com/amberweinberg"><img src="http://img.tweetimag.es/i/amberweinberg" alt="@amberweinberg" /></a></li>
-		<li><a href="http://twitter.com/jamieknight"><img src="http://img.tweetimag.es/i/jamieknight" alt="@jamieknight" /></a></li>
-		<li><a href="http://twitter.com/dkewal"><img src="http://img.tweetimag.es/i/dkewal" alt="@dkewal" /></a></li>
-		<li><a href="http://twitter.com/laurakalbag"><img src="http://img.tweetimag.es/i/laurakalbag" alt="@laurakalbag" /></a></li>
-		<li><a href="http://twitter.com/mrgeorgegray"><img src="http://img.tweetimag.es/i/mrgeorgegray" alt="@mrgeorgegray" /></a></li>
-		<li><a href="http://twitter.com/epixelstudio"><img src="http://img.tweetimag.es/i/epixelstudio" alt="@epixelstudio" /></a></li>
-		<li><a href="http://twitter.com/khamiltonuk"><img src="http://img.tweetimag.es/i/khamiltonuk" alt="@khamiltonuk" /></a></li>
-		<li><a href="http://twitter.com/dean_faulkner"><img src="http://img.tweetimag.es/i/dean_faulkner" alt="@dean_faulkner" /></a></li>
-		<li><a href="http://twitter.com/locombia25"><img src="http://img.tweetimag.es/i/locombia25" alt="@locombia25" /></a></li>
-		
+		<?php
+			$attendees = array(‘crcreatives’, ‘mrqwest’, 'simianstudios', alexjsexton, simoncox, fulljames, rchasteanueuf, mikestreety, clivewalker, dynamic50, kevin_davies, standardistas, pauladamdavis, paulmist, weshuk, bossingtonimage, steverydz, tarunhari, danblundell, mkstix6, blinkbrian, ayoungh, amberweinberg, jamieknight, dkewal, laurakalbag, mrgeorgegray, epixelstudio, khamiltonuk, dean_faulkner, locombia25, smartin_hazel, mikesimmonds, jef_lau, eightmadefour, philwareham, shanegriffiths, wstn, designsbylexi, kulor, englishtom);
+			Foreach($attendees as $attendee) {
+				?> <li class="attendee"><a href="http://twitter.com/<?=$attendee?>"><img alt=”<?=$attendee?>" src="http://img.tweetimag.es/i/<?=$attendee?>"></a></li><?php
+                }
+?>
+				
 				</ul>
 
 	
 	</section>
 	
-	<section>
-		<h1>Gallery</h1>
-		<p>From time to time, people take photos at our meetups. You'll find a select few below.</p>
+	<section id="lanyrd">
+		<h1>Lanyrd</h1>
+		<p>We love <a href="http://Lanyrd.com" title="Lanyrd">Lanyrd</a> here, it's a fantastic service for events and conferences which allows people to track or mark as attending each event as well as sharing details.</p>
+		<p>We set up an event on Lanyrd for every CroydonCreatives meet and we love it when new & old friends add their names to the list.  If you're planning on coming along to the next CroydonCreatives meet, please do pop your name down - all you need is your twitter username!</p>
+		<p><a href="http://lanyrd.com/series/croydoncreatives/" title="Our CroydonCreatives Series Page">CroydonCreatives on Lanyrd</a></p>
 	</section>
 	
 	<footer>
 		<p class="copyright">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz">Steve Rydz</a><span class="yellowswitch"></span></p>
 	</footer>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23121126-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+
 </body>
 </html>

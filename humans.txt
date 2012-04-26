@@ -1,0 +1,16 @@
+/* TEAM */
+	Design / Development: Anthony Killeen
+	contact: hello [at] mrqwest.co.uk
+	twitter: @mrqwest
+	Location: Croydon
+	
+	Design: Steve Rydz
+	Twitter: @steverydz
+	
+	Additional Code: Mike Street
+	twitter: @mikestreety
+	
+/* SITE */
+	Language:English
+	Doctype:HTML5
+	IDE: Coda, Filezilla, Photoshop
