@@ -76,13 +76,12 @@
 		<h1>Join the List</h1>
 		<p>We send out e-mails every now and then to let you know when the next gathering or event will take place. If you want to receive these emails, all we need is your name and email address. The Twitter username is just so we can say hello :)</p>
 		
-		<!-- Begin MailChimp Signup Form -->
+		<!-- MailChimp Signup Form -->
 		<script>
-		// delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
-		// or fill this in and it will be inlined when errors are generated
-		var mc_custom_error_style = '';
+			// delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
+			// or fill this in and it will be inlined when errors are generated
+			var mc_custom_error_style = '';
 		</script>
-
 		<div id="mc_embed_signup">
 			<form action="http://mrqwest.us2.list-manage.com/subscribe/post?u=c823261dac3f873975b9895fc&amp;id=c1f1938a5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 				<fieldset>
@@ -110,7 +109,8 @@
 			</form>
 		</div>
 		<script src="js/mailchimp.js"></script>
-		<!--End mc_embed_signup-->
+		<!-- /MailChimp Signup Form -->
+
 	</section>
 	
 	<section id="attendees">
