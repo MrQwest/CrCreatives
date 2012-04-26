@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
 html,
 body,
 div,
@@ -116,10 +113,10 @@ q {
   quotes: none;
 }
 blockquote:before,
-blockquote:after,
 q:before,
+blockquote:after,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -143,7 +140,6 @@ body {
 }
 section,
 header {
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 1.5em;
   width: 96%;
   max-width: 40em;
@@ -152,6 +148,7 @@ header {
   border-left: 1px solid #ffffff;
   box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   border-radius: .19em;
+  background-color: rgba(255, 255, 255, 0.8);
   background-image: url(../images/stuccobg.png);
 }
 img#branding {
@@ -178,13 +175,13 @@ header nav ul.mainnav li {
 header nav ul.mainnav li:first-child {
   padding-left: 0;
 }
-header nav ul.mainnav li a {
+header nav a {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
   -webkit-transition: all 0.2s ease-in-out;
 }
-header nav ul.mainnav li a:hover {
+header nav a:hover {
   color: #000000;
 }
 #next {
@@ -228,7 +225,7 @@ section label {
 }
 section p:last-child,
 section label:last-child {
-  padding-bottom: 0em;
+  padding-bottom: 0;
 }
 section a {
   text-decoration: none;
