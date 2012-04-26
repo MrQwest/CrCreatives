@@ -22,8 +22,8 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 	
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/map.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" media="all">
+	<link rel="stylesheet" href="css/map.css" media="all">
 	
 	<!-- For iPhone 4 -->
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
