@@ -13,6 +13,9 @@
 	Additional Code (Google Maps): James Broad
 	twitter: @kulor
 	
+	Additional Optimisation: Phil Wareham
+	twitter: @philwareham
+	
 /* SITE */
 	Language:English
 	Doctype:HTML5
