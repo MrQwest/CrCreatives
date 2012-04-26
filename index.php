@@ -138,7 +138,7 @@
 		<ul id="attendence">
 		
 		<?php
-			$attendees = array(crcreatives, mrqwest, simianstudios, alexjsexton, simoncox, fulljames, rchasteauneuf, mikestreety, clivewalker, dynamic50, kevin_davies, standardistas, pauladamdavis, paulmist, weshuk, bossingtonimage, steverydz, tarunhari, danblundell, mkstix6, blinkbrian, ayoungh, amberweinberg, jamieknight, dkewal, laurakalbag, mrgeorgegray, epixelstudio, khamiltonuk, dean_faulkner, locombia25, smartin_hazel, mikesimmonds, jef_lau, eightmadefour, philwareham, shanegriffiths, wstn, designsbylexi, kulor, englishtom);
+			$attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom');
 			Foreach($attendees as $attendee) {
 				?> <li class="attendee"><a href="http://twitter.com/<?=$attendee?>"><img alt=”<?=$attendee?>" src="http://img.tweetimag.es/i/<?=$attendee?>"></a></li><?php
                 }
