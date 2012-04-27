@@ -1,17 +1,33 @@
-// Add rounded corners to any element
+// Micro clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
 
-.rounded-corners (@radius: .3em) {
+.clearfix {
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom: 1;
+}
+
+
+// Rounded corners
+
+.border-radius (@radius: .3em) {
 	-moz-border-radius: @radius; // Firefox3.6, Camino2.1
 	border-radius: @radius;
 }
 
 
-// Add a .2s transition to UI elements
+// CSS transisions
 
-.transition (@speed: .2s) {
-	-webkit-transition: all @speed ease-in-out;
-	-moz-transition: all @speed ease-in-out;
-	transition: all @speed ease-in-out;
+.transition(@transition: all .2s ease-in-out) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-ms-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
 }
 
 
@@ -34,8 +50,7 @@
 	/* CSS3 Compliant */
 	background-image: linear-gradient(@colour-gradient-from, @colour-gradient-to);
 	/* IE7-9 */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{@colour-gradient-from}',EndColorStr='#{@colour-gradient-to}');
-    filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d')",@colour-gradient-from,@colour-gradient-to));
+	filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d')",@colour-gradient-from,@colour-gradient-to));
 	/* hack to remove any border-radius in IE9 so we can keep filter gradients */
 	border-radius: 0 \0;
 }
@@ -77,10 +92,10 @@
 // Text shadows
 
 .text-shadow-light {
-    text-shadow: 1px 1px 0 rgba(255,255,255,.4);
+	text-shadow: 1px 1px 0 rgba(255,255,255,.4);
 }
 .text-shadow-dark {
-    text-shadow: -1px -1px 0 rgba(0,0,0,.25);
+	text-shadow: -1px -1px 0 rgba(0,0,0,.25);
 }
 
 
@@ -90,4 +105,13 @@
 	-webkit-box-sizing: @box-sizing;
 	-moz-box-sizing: @box-sizing;
 	box-sizing: @box-sizing;
+}
+
+
+// Better alternative to the text-indent:-9999px method
+
+.hide-text {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
 }
