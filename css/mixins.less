@@ -14,7 +14,7 @@
 
 // Rounded corners
 
-.border-radius(@radius: .3em) {
+.border-radius(@radius: .3125em) { // 5px / 16px
 	-moz-border-radius: @radius; // Firefox3.6, Camino2.1
 	border-radius: @radius;
 }
@@ -22,7 +22,7 @@
 
 // CSS transisions
 
-.transition(@transition: all .2s ease-in-out) {
+.transition(@transition: all .25s ease-in-out) {
 	-webkit-transition: @transition;
 	-moz-transition: @transition;
 	-ms-transition: @transition;
@@ -82,7 +82,7 @@
 
 // Drop shadows
 
-.box-shadow(@shadow: 0 0 .7em rgba(0,0,0,.3)) {
+.box-shadow(@shadow: 0 0 .75em rgba(0,0,0,.3)) {
 	-webkit-box-shadow: @shadow; // Safari4
 	-moz-box-shadow: @shadow; // Firefox3.6, Camino2.1
 	box-shadow: @shadow;
