@@ -1,3 +1,24 @@
+.background-clip {
+  -webkit-background-clip: padding;
+  -khtml-background-clip: padding-box;
+  -moz-background-clip: padding;
+  -ms-background-clip: padding-box;
+  -o-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.inline-block {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.text-shadow-light {
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+.text-shadow-dark {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+}
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
 html,
 body,
@@ -104,10 +125,12 @@ section {
 body {
   line-height: 1;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 blockquote:before,
@@ -122,7 +145,6 @@ table {
   border-spacing: 0;
 }
 /* MY STYLE IS IDENTICAL TO NONE =============================== */
-/* LESS VARIABLES */
 /* THANK YOU PAUL IRISH! */
 * {
   -webkit-box-sizing: border-box;
@@ -136,17 +158,26 @@ body {
   padding: 1em;
   font-family: "ff-meta-serif-web-pro", serif;
 }
-section, header {
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+section,
+header {
   padding: 1.5em;
   width: 96%;
   max-width: 40em;
   margin: 0 auto 1.4em;
   border-top: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
-  box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
-  border-radius: .19em;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
   background-color: rgba(255, 255, 255, 0.8);
-  background-image: url(../images/stuccobg.png);
+  background-image: url("../images/stuccobg.png");
 }
 img#branding {
   display: block;
@@ -176,7 +207,6 @@ header nav a {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-  -webkit-transition: all 0.2s ease-in-out;
 }
 header nav a:hover {
   color: #000000;
@@ -187,9 +217,12 @@ header nav a:hover {
   border-left: 1px solid rgba(255, 255, 255, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: .2em;
-  box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+  text-shadow: none;
 }
 #next p {
   text-align: center;
@@ -213,19 +246,25 @@ section h1 {
   font-weight: bold;
   padding-bottom: .5em;
 }
-section p, section label {
+section p,
+section label {
   font-size: 1.05em;
   padding-bottom: 1em;
   line-height: 1.6em;
   color: rgba(0, 0, 0, 0.85);
 }
-section p:last-child, section label:last-child {
+section p:last-child,
+section label:last-child {
   padding-bottom: 0;
 }
 section a {
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   color: #9e3037;
+}
+section a:hover,
+section a:active {
+  color: #631e23;
 }
 #jointhelist .mc-field-group {
   line-height: 2em;
@@ -236,12 +275,19 @@ section a {
   width: 100%;
 }
 #attendence li {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   margin: .24em;
 }
 #attendence li img {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: .2em;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
 }
 #attendence li a {
   border: 0;
@@ -261,16 +307,13 @@ footer a {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.6);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 footer a:hover {
   color: #000000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 footer #missyellow {
-  color: #ffd955;
+  color: #ffce22;
   float: right;
   right: 0;
 }
@@ -287,16 +330,18 @@ footer #missyellow {
   float: right;
   margin-left: 10px;
 }
+/* Tweetlist */
 #tweetlist a {
-  border: none;
+  border: 0;
 }
 #tweetlist li {
   padding-bottom: 2em;
 }
 #tweetlist img {
-  border-radius: .3em;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
   padding-right: 1em;
-  border: none;
+  border: 0;
   position: absolute;
 }
 #tweetlist span {
@@ -308,7 +353,7 @@ footer #missyellow {
 #tweetlist .tweet {
   padding-left: 4em;
   padding-top: .5em;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 @media screen and (min-width: 601px) and (max-width: 1900px) {
   #jointhelist .mc-field-group {
@@ -335,8 +380,11 @@ footer #missyellow {
     margin-top: -1em;
     padding-top: 2.65em;
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: .2em;
-    box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.4);
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
   }
   #next p {
     text-align: center;
