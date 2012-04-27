@@ -1,0 +1,93 @@
+// Add rounded corners to any element
+
+.rounded-corners (@radius: .25em) {
+	-moz-border-radius: @radius; // Firefox3.6, Camino2.1
+	border-radius: @radius;
+}
+
+
+// Add a .2s transition to UI elements
+
+.transition (@speed: .2s) {
+	-webkit-transition: all @speed ease-in-out;
+	-moz-transition: all @speed ease-in-out;
+	transition: all @speed ease-in-out;
+}
+
+
+// Gradients
+
+.gradient (@colour-gradient-from, @colour-gradient-to) {
+	background-color: @colour-gradient-from;
+	/* Konqueror */
+	background-image: -khtml-gradient(linear, left top, left bottom, from(@colour-gradient-from), to(@colour-gradient-to));
+	/* Safari4+, Chrome */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(@colour-gradient-from), to(@colour-gradient-to));
+	/* Safari5.1+, Chrome10+ */
+	background-image: -webkit-linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	/* Firefox3.6 */
+	background-image: -moz-linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	/* IE10 */
+	background-image: -ms-linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	/* Opera11.10+ */
+	background-image: -o-linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	/* CSS3 Compliant */
+	background-image: linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	/* IE7-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{@colour-gradient-from}',EndColorStr='#{@colour-gradient-to}');
+    filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d')",@colour-gradient-from,@colour-gradient-to));
+	/* hack to remove any border-radius in IE9 so we can keep filter gradients */
+	border-radius: 0 \0;
+}
+
+
+// Background clipping
+
+.background-clip {
+	-webkit-background-clip: padding;
+	-khtml-background-clip: padding-box;
+	-moz-background-clip: padding;
+	-ms-background-clip: padding-box;
+	-o-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+
+// Cross-platform inline-block
+
+.inline-block {
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	// display and zoom IE7 fix for display:inline-block
+	*display: inline;
+	*zoom: 1;
+}
+
+
+// Drop shadows
+
+.box-shadow(@shadow: 0 0 .7em rgba(0,0,0,.3)) {
+	-webkit-box-shadow: $shadow; // Safari4
+	-moz-box-shadow: $shadow; // Firefox3.6, Camino2.1
+	box-shadow: $shadow;
+}
+
+
+// Text shadows
+
+.text-shadow-light {
+    text-shadow: 1px 1px 0 rgba(255,255,255,.4);
+}
+.text-shadow-dark {
+    text-shadow: -1px -1px 0 rgba(0,0,0,.25);
+}
+
+
+// Box sizing
+
+.box-sizing(@box-sizing: border-box) {
+	-webkit-box-sizing: @box-sizing;
+	-moz-box-sizing: @box-sizing;
+	box-sizing: @box-sizing;
+}

@@ -1,3 +1,6 @@
+@import "variables.less";
+@import "mixins.less";
+
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
 
 html, body, div, span, applet, object, iframe,
@@ -44,22 +47,12 @@ table {
 	border-spacing: 0;
 }
 
-@import "mixin.less";
-
 /* MY STYLE IS IDENTICAL TO NONE =============================== */
-
-/* LESS VARIABLES */
-
-@yellow: rgba(255,217,85,1);
-@seccol: rgba(158,48,55,1);
-
 
 
 /* THANK YOU PAUL IRISH! */
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	.box-sizing;
 }
 
 html {
@@ -71,6 +64,10 @@ body {
 	font-family: "ff-meta-serif-web-pro", serif;
 }
 
+a {
+    .transition;
+}
+
 section, header {
 	padding: 1.5em;
 	width: 96%;
@@ -78,10 +75,10 @@ section, header {
 	margin: 0 auto 1.4em;
 	border-top: 1px solid rgba(255,255,255,1);
 	border-left: 1px solid rgba(255,255,255,1);
-	box-shadow: 0 0 .7em rgba(0,0,0,.3);
-	border-radius: .19em;
+	.box-shadow;
+	.rounded-corners;
 	background-color: rgba(255,255,255,.8);
-    background-image: url(../images/stuccobg.png);
+    background-image: url("../images/stuccobg.png");
 }
 
 img#branding {
@@ -113,9 +110,8 @@ header {
 			color: rgba(0,0,0,.6);
 			text-decoration: none;
 			border-bottom: 1px solid rgba(0,0,0,.6);
-			-webkit-transition: all .2s ease-in-out;
 			&:hover {
-				color: darken(@yellow,70%);
+				color: darken(@colour-highlight,70%);
 			}
 		}
 	}
@@ -127,9 +123,9 @@ header {
 	border-left: 1px solid rgba(255,255,255,.25);
 	border-top: 1px solid rgba(255,255,255,.25);
 	background-color: rgba(0,0,0,.6);
-	border-radius: .2em;
-	box-shadow: 0 0 .7em rgba(0,0,0,.4);
-	text-shadow: 0 0 0 rgba(0,0,0,0);
+	.rounded-corners;
+	.box-shadow;
+	text-shadow: none;
 	p {
 		text-align: center;
 		font-size: 2em;
@@ -146,7 +142,7 @@ header {
 }	
 
 section {
-	text-shadow: 1px 1px 0 rgba(255,255,255,.4);
+	.text-shadow-light;
  	h1 {
 		font-size: 1.6em;
 		font-family: "adelle", serif;
@@ -165,7 +161,10 @@ section {
 	a {
 		text-decoration: none;
 		border-bottom: 1px solid rgba(0,0,0,.5);
-		color: @seccol;
+		color: @colour-link;
+        &:hover, &:active {
+            color: darken(@colour-link,15%);
+        }
 	}
 }
 
@@ -182,11 +181,11 @@ section {
 
 #attendence {
 	li {
-		display: inline-block;
+		.inline-block;
 		margin: .24em;
 		img {
-			-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
-			border-radius: .2em;
+			.box-shadow;
+			.rounded-corners;
 		}
 		a {
 			border: 0;
@@ -208,14 +207,13 @@ footer {
 		color: rgba(255,255,255,1);
 		text-decoration: none;
 		border-bottom: 1px dotted rgba(0,0,0,.6);
-		.transition();
 		&:hover {
 			color: rgba(0,0,0,1);
 			border-bottom: 1px solid rgba(255,255,255,.8);
 		}
 	}
 	#missyellow{
-		color: @yellow;
+		color: @colour-highlight;
 		float: right;
 		right: 0;
 	}
@@ -266,8 +264,8 @@ footer {
 		margin-top: -1em;
 		padding-top: 2.65em;
 		background-color: rgba(0,0,0,.6);
-		border-radius: .2em;
-		box-shadow: 0 0 .7em rgba(0,0,0,.4);
+		.rounded-corners;
+		.box-shadow;
 		p {
 			text-align: center;
 			font-size: 2em;
