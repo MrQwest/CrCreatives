@@ -106,8 +106,8 @@ $data = $data->results;
 			$tweet = preg_replace('/(^|\s)@(\w+)/','\1<a href="http://twitter.com/\2">@\2</a>', $d->text);
 	?>
 	<li class="<?php echo $d->from_user; ?>">
-		<a class="grid_1 alpha"><img class="twitteravatar" src="<?php echo $d->profile_image_url; ?>" alt="<?php echo $d->from_user; ?>" /></a>
-		<span class="grid 4 omega">
+		<a><img class="twitteravatar" src="<?php echo $d->profile_image_url; ?>" alt="<?php echo $d->from_user; ?>" /></a>
+		<span>
 			<a class="twitteruser" ref="nofollow" href="http://twitter.com/<?php echo $d->from_user; ?>"><?php echo $d->from_user; ?></a> 
 			<span class="twittertime"><?php echo $created_at; ?></span>
 		</span>	| <a href="http://twitter.com/intent/tweet?in_reply_to_status_id=<?php echo $d->id; ?>">Reply</a>
@@ -118,4 +118,4 @@ $data = $data->results;
 		}
 	}
 ?>
-<li><a href="http://twitter.com/#!/search/realtime/%23eeuk11" >Find older tweets on twitter</a></li>
+<li><a href="http://twitter.com/crcreatives" >Follow us on twitter</a></li>
