@@ -110,7 +110,7 @@ $data = $data->results;
 		<span>
 			<a class="twitteruser" ref="nofollow" href="http://twitter.com/<?php echo $d->from_user; ?>"><?php echo $d->from_user; ?></a> 
 			<span class="twittertime"><?php echo $created_at; ?></span>
-		</span>	| <a href="http://twitter.com/intent/tweet?in_reply_to_status_id=<?php echo $d->id; ?>">Reply</a>
+		</span><!--	| <a href="http://twitter.com/intent/tweet?in_reply_to_status_id=<?php echo $d->id; ?>">Reply</a>-->
 			<br />
 		<p class="tweet"><?php echo link_it($tweet); ?></p>
 	</li>
