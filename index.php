@@ -28,6 +28,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
 	<script src="js/jquery.anystretch.min.js"></script>
+	<script src="js/jquery.scrollTo-min.js"></script>
 	<script src="js/portamento.js"></script>
 	<script src="js/crcreatives.js"></script>
 	<script src="http://use.typekit.com/bof8zfa.js"></script>
@@ -141,10 +142,9 @@
 			<?php require('tweetstream/cctweets.php'); ?>
 		</ul>
 	</section>
-	
-	
+
 	<footer>
-		<p class="copyright">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a><span class="yellowswitch"></span></p>
+		<p class="copyright" data-switch="yellowswitch">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a></p>
 	</footer>
 
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -155,15 +155,6 @@
 		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
-
-	<script>
-	 $(document).ready(function() {
-	 	 $("#tweetlist").load("tweetstream/cctweets.php");
-	   var refreshId = setInterval(function() {
-	     $("#tweetlist").load('tweetstream/cctweets.php');
-	   }, 300000);
-	});
 	</script>
 
 </body>

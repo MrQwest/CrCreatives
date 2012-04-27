@@ -288,11 +288,15 @@ footer a:hover {
   color: #000000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
-footer #missyellow {
+footer .yellowswitch a {
   color: #ffce22;
   float: right;
   right: 0;
 }
+footer .yellowswitch a.switched {
+  color: #000;
+}
+
 /* Google Map */
 .js #map_canvas {
   height: 300px;
