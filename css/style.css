@@ -330,6 +330,31 @@ footer #missyellow {
   float: right;
   margin-left: 10px;
 }
+/* Tweetlist */
+#tweetlist a {
+  border: 0;
+}
+#tweetlist li {
+  padding-bottom: 2em;
+}
+#tweetlist img {
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
+  padding-right: 1em;
+  border: 0;
+  position: absolute;
+}
+#tweetlist span {
+  color: rgba(0, 0, 0, 0.4);
+}
+#tweetlist .twitteruser {
+  padding-left: 4em;
+}
+#tweetlist .tweet {
+  padding-left: 4em;
+  padding-top: .5em;
+  line-height: 1.5;
+}
 @media screen and (min-width: 601px) and (max-width: 1900px) {
   #jointhelist .mc-field-group {
     line-height: 2em;
