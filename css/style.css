@@ -171,9 +171,9 @@ header {
   margin: 0 auto 1.4em;
   border-top: 1px solid #ffffff;
   border-left: 1px solid #ffffff;
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
-  box-shadow: $shadow;
+  -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
   background-color: rgba(255, 255, 255, 0.8);
@@ -219,9 +219,9 @@ header nav a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
-  box-shadow: $shadow;
+  -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   text-shadow: none;
 }
 #next p {
@@ -283,9 +283,9 @@ section a:active {
   margin: .24em;
 }
 #attendence li img {
-  -webkit-box-shadow: $shadow;
-  -moz-box-shadow: $shadow;
-  box-shadow: $shadow;
+  -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   -moz-border-radius: 0.25em;
   border-radius: 0.25em;
 }
@@ -382,9 +382,9 @@ footer #missyellow {
     background-color: rgba(0, 0, 0, 0.6);
     -moz-border-radius: 0.25em;
     border-radius: 0.25em;
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
+    -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   }
   #next p {
     text-align: center;
