@@ -137,7 +137,7 @@
 	<section id="stream">
 		<h1>Twitter Stream</h1>
 		<p>We use Twitter a lot - read what is being said about Croydon Creatives</p>
-		<ul id="tweetlist" class="grid_7 tweetlist">
+		<ul id="tweetlist">
 			<?php require('tweetstream/cctweets.php'); ?>
 		</ul>
 	</section>
