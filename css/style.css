@@ -174,8 +174,8 @@ header {
   -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
   background-color: rgba(255, 255, 255, 0.8);
   background-image: url("../images/stuccobg.png");
 }
@@ -217,8 +217,8 @@ header nav a:hover {
   border-left: 1px solid rgba(255, 255, 255, 0.25);
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   background-color: rgba(0, 0, 0, 0.6);
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
   -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
@@ -286,8 +286,8 @@ section a:active {
   -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
 }
 #attendence li a {
   border: 0;
@@ -338,9 +338,12 @@ footer #missyellow {
   padding-bottom: 2em;
 }
 #tweetlist img {
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
-  padding-right: 1em;
+  -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  margin-right: 1em;
   border: 0;
   position: absolute;
 }
@@ -380,8 +383,8 @@ footer #missyellow {
     margin-top: -1em;
     padding-top: 2.65em;
     background-color: rgba(0, 0, 0, 0.6);
-    -moz-border-radius: 0.25em;
-    border-radius: 0.25em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
     -webkit-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.3);
