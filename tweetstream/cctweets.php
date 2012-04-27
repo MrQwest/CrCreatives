@@ -118,4 +118,4 @@ $data = $data->results;
 		}
 	}
 ?>
-<li><a href="http://twitter.com/crcreatives" >Follow us on twitter</a></li>
+<li><a href="http://twitter.com/crcreatives" rel="external">Follow us on twitter</a></li>
