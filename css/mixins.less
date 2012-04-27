@@ -1,23 +1,39 @@
-// Add rounded corners to any element
+// Micro clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
 
-.rounded-corners (@radius: .3em) {
+.clearfix() {
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom: 1;
+}
+
+
+// Rounded corners
+
+.border-radius(@radius: .3125em) { // 5px / 16px
 	-moz-border-radius: @radius; // Firefox3.6, Camino2.1
 	border-radius: @radius;
 }
 
 
-// Add a .2s transition to UI elements
+// CSS transisions
 
-.transition (@speed: .2s) {
-	-webkit-transition: all @speed ease-in-out;
-	-moz-transition: all @speed ease-in-out;
-	transition: all @speed ease-in-out;
+.transition(@transition: all .25s ease-in-out) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-ms-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
 }
 
 
 // Gradients
 
-.gradient (@colour-gradient-from, @colour-gradient-to) {
+.gradient(@colour-gradient-from, @colour-gradient-to) {
 	background-color: @colour-gradient-from;
 	/* Konqueror */
 	background-image: -khtml-gradient(linear, left top, left bottom, from(@colour-gradient-from), to(@colour-gradient-to));
@@ -34,8 +50,7 @@
 	/* CSS3 Compliant */
 	background-image: linear-gradient(@colour-gradient-from, @colour-gradient-to);
 	/* IE7-9 */
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{@colour-gradient-from}',EndColorStr='#{@colour-gradient-to}');
-    filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d')",@colour-gradient-from,@colour-gradient-to));
+	filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d')",@colour-gradient-from,@colour-gradient-to));
 	/* hack to remove any border-radius in IE9 so we can keep filter gradients */
 	border-radius: 0 \0;
 }
@@ -43,7 +58,7 @@
 
 // Background clipping
 
-.background-clip {
+.background-clip() {
 	-webkit-background-clip: padding;
 	-khtml-background-clip: padding-box;
 	-moz-background-clip: padding;
@@ -55,7 +70,7 @@
 
 // Cross-platform inline-block
 
-.inline-block {
+.inline-block() {
 	display: -moz-inline-box;
 	-moz-box-orient: vertical;
 	display: inline-block;
@@ -67,7 +82,7 @@
 
 // Drop shadows
 
-.box-shadow(@shadow: 0 0 .7em rgba(0,0,0,.3)) {
+.box-shadow(@shadow: 0 0 .75em rgba(0,0,0,.3)) {
 	-webkit-box-shadow: @shadow; // Safari4
 	-moz-box-shadow: @shadow; // Firefox3.6, Camino2.1
 	box-shadow: @shadow;
@@ -76,11 +91,11 @@
 
 // Text shadows
 
-.text-shadow-light {
-    text-shadow: 1px 1px 0 rgba(255,255,255,.4);
+.text-shadow-light() {
+	text-shadow: 1px 1px 0 rgba(255,255,255,.4);
 }
-.text-shadow-dark {
-    text-shadow: -1px -1px 0 rgba(0,0,0,.25);
+.text-shadow-dark() {
+	text-shadow: -1px -1px 0 rgba(0,0,0,.25);
 }
 
 
@@ -90,4 +105,13 @@
 	-webkit-box-sizing: @box-sizing;
 	-moz-box-sizing: @box-sizing;
 	box-sizing: @box-sizing;
+}
+
+
+// Better alternative to the text-indent:-9999px method
+
+.hide-text() {
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
 }
