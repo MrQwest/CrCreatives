@@ -21,8 +21,8 @@
     $text= preg_replace("/(^|[\n ])([\w]*?)((ht|f)tp(s)?:\/\/[\w]+[^ \,\"\n\r\t<]*)/is", "$1$2<a href=\"$3\" >$3</a>", $text);
     $text= preg_replace("/(^|[\n ])([\w]*?)((www|ftp)\.[^ \,\"\t\n\r<]*)/is", "$1$2<a href=\"http://$3\" >$3</a>", $text);
     $text= preg_replace("/(^|[\n ])([a-z0-9&\-_\.]+?)@([\w\-]+\.([\w\-\.]+)+)/i", "$1<a href=\"mailto:$2@$3\">$2@$3</a>", $text);
-    $text= preg_replace("/@(\w+)/", '<a href="http://www.twitter.com/$1" target="_blank">@$1</a>', $text);  
-    $text= preg_replace("/\#(\w+)/", '<a href="http://search.twitter.com/search?q=$1" target="_blank">#$1</a>',$text);  
+    $text= preg_replace("/@(\w+)/", '<a href="http://www.twitter.com/$1" rel="external">@$1</a>', $text);  
+    $text= preg_replace("/\#(\w+)/", '<a href="http://search.twitter.com/search?q=$1" rel="external">#$1</a>',$text);  
     return($text);
 }
 
@@ -108,7 +108,7 @@ $data = $data->results;
 	<li class="<?php echo $d->from_user; ?>">
 		<a><img class="twitteravatar" src="<?php echo $d->profile_image_url; ?>" alt="<?php echo $d->from_user; ?>" /></a>
 		<span>
-			<a class="twitteruser" ref="nofollow" href="http://twitter.com/<?php echo $d->from_user; ?>"><?php echo $d->from_user; ?></a> 
+			<a class="twitteruser" rel="external" href="http://twitter.com/<?php echo $d->from_user; ?>"><?php echo $d->from_user; ?></a> 
 			<span class="twittertime"><?php echo $created_at; ?></span>
 		</span><!--	| <a href="http://twitter.com/intent/tweet?in_reply_to_status_id=<?php echo $d->id; ?>">Reply</a>-->
 			<br />
@@ -118,4 +118,4 @@ $data = $data->results;
 		}
 	}
 ?>
-<li><a href="http://twitter.com/crcreatives" >Follow us on twitter</a></li>
+<li><a href="http://twitter.com/crcreatives" rel="external">Follow us on twitter</a></li>
