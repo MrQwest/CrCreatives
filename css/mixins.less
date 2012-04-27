@@ -1,6 +1,6 @@
 // Micro clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
 
-.clearfix {
+.clearfix() {
 	&:before, &:after {
 		content: "";
 		display: table;
@@ -14,7 +14,7 @@
 
 // Rounded corners
 
-.border-radius (@radius: .3em) {
+.border-radius(@radius: .3em) {
 	-moz-border-radius: @radius; // Firefox3.6, Camino2.1
 	border-radius: @radius;
 }
@@ -33,7 +33,7 @@
 
 // Gradients
 
-.gradient (@colour-gradient-from, @colour-gradient-to) {
+.gradient(@colour-gradient-from, @colour-gradient-to) {
 	background-color: @colour-gradient-from;
 	/* Konqueror */
 	background-image: -khtml-gradient(linear, left top, left bottom, from(@colour-gradient-from), to(@colour-gradient-to));
@@ -58,7 +58,7 @@
 
 // Background clipping
 
-.background-clip {
+.background-clip() {
 	-webkit-background-clip: padding;
 	-khtml-background-clip: padding-box;
 	-moz-background-clip: padding;
@@ -70,7 +70,7 @@
 
 // Cross-platform inline-block
 
-.inline-block {
+.inline-block() {
 	display: -moz-inline-box;
 	-moz-box-orient: vertical;
 	display: inline-block;
@@ -91,10 +91,10 @@
 
 // Text shadows
 
-.text-shadow-light {
+.text-shadow-light() {
 	text-shadow: 1px 1px 0 rgba(255,255,255,.4);
 }
-.text-shadow-dark {
+.text-shadow-dark() {
 	text-shadow: -1px -1px 0 rgba(0,0,0,.25);
 }
 
@@ -110,7 +110,7 @@
 
 // Better alternative to the text-indent:-9999px method
 
-.hide-text {
+.hide-text() {
 	text-indent: 110%;
 	white-space: nowrap;
 	overflow: hidden;
