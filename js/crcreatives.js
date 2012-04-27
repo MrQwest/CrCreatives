@@ -3,8 +3,14 @@ var cc = cc || {
         'yellowswitch': ['Miss the yellow?','Ditch the yellow?']
     },
     'init': function() {
+        this.setupNav();
         this.themeSwitcher();
         this.twitterLoader();
+    },
+    'setupNav': function() {
+        $.root.find('ul.mainnav a:not([rel=external])').on('click',function() {
+            $.scrollTo($('#'+this.href.split('#')[1]),500);
+        });
     },
     'themeSwitcher': function() {
         $.root.find('*[data-switch]').each(function() {
