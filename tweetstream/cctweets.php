@@ -108,7 +108,7 @@ $data = $data->results;
 	<li class="<?php echo $d->from_user; ?>">
 		<a><img class="twitteravatar" src="<?php echo $d->profile_image_url; ?>" alt="<?php echo $d->from_user; ?>" /></a>
 		<span>
-			<a class="twitteruser" ref="nofollow" href="http://twitter.com/<?php echo $d->from_user; ?>"><?php echo $d->from_user; ?></a> 
+			<a class="twitteruser" rel="external" href="http://twitter.com/<?php echo $d->from_user; ?>"><?php echo $d->from_user; ?></a> 
 			<span class="twittertime"><?php echo $created_at; ?></span>
 		</span><!--	| <a href="http://twitter.com/intent/tweet?in_reply_to_status_id=<?php echo $d->id; ?>">Reply</a>-->
 			<br />
