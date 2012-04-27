@@ -1,5 +1,7 @@
+// Import Less partials
 @import "variables.less";
 @import "mixins.less";
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
 
@@ -19,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 100%; // 16px browser default
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -47,6 +49,7 @@ table {
 	border-spacing: 0;
 }
 
+
 /* MY STYLE IS IDENTICAL TO NONE =============================== */
 
 
@@ -60,25 +63,26 @@ html {
 }
 	
 body {
+	font-family: @font-body;
+	line-height: @baseline;
 	padding: 1em;
-	font-family: "ff-meta-serif-web-pro", serif;
 }
 
 a {
-    .transition;
+	.transition;
 }
 
 section, header {
 	padding: 1.5em;
 	width: 96%;
 	max-width: 40em;
-	margin: 0 auto 1.4em;
-	border-top: 1px solid rgba(255,255,255,1);
-	border-left: 1px solid rgba(255,255,255,1);
+	margin: 0 auto 1.5em;
+    border: solid rgba(255,255,255,1);
+	border-width: 1px 0 0 1px;
 	.box-shadow;
-	.rounded-corners;
+	.border-radius;
 	background-color: rgba(255,255,255,.8);
-    background-image: url("../images/stuccobg.png");
+	background-image: url("../images/stuccobg.png");
 }
 
 img#branding {
@@ -89,24 +93,23 @@ img#branding {
 
 header {
 	h1 {
-		padding: .4em 0 1.4em 0;
+		padding: .5em 0 1.5em;
 	}
 	img {
 		max-width: 100%;
 	}
 	nav {
-		font-family: "adelle", serif;
+		font-family: @font-heading;
 		border-top: 1px dotted rgba(0,0,0,.6);
 		padding: 1em 0 0;
-        ul.mainnav li {
+		ul.mainnav li {
 			display: inline;
-			padding-left: .8em;
-			line-height: 1.8em;
+			padding-left: .75em;
 			&:first-child {
 				padding-left: 0;
 			}
 		}
-        a {
+		a {
 			color: rgba(0,0,0,.6);
 			text-decoration: none;
 			border-bottom: 1px solid rgba(0,0,0,.6);
@@ -118,24 +121,21 @@ header {
 }
 
 #next {
-	border-bottom: 1px solid rgba(0,0,0,.4);
-	border-right: 1px solid rgba(0,0,0,.4);
-	border-left: 1px solid rgba(255,255,255,.25);
-	border-top: 1px solid rgba(255,255,255,.25);
+	border: 1px solid;
+	border-color: rgba(255,255,255,.25) rgba(0,0,0,.4) rgba(0,0,0,.4) rgba(255,255,255,.25);
 	background-color: rgba(0,0,0,.6);
-	.rounded-corners;
+	.border-radius;
 	.box-shadow;
 	text-shadow: none;
 	p {
 		text-align: center;
-		font-size: 2em;
+		font-size: 1.875em; // 30px / 16px
 		color: rgba(255,255,255,.4);
 		span {
-			font-family: "adelle", serif;
-			font-size: .9em;
+			font-family: @font-heading;
 			font-weight: bold;
 			color: rgba(255,255,255,.9);
-			line-height: 1.55em;
+			line-height: @baseline;
 			display: block;
 		}
 	}
@@ -144,15 +144,13 @@ header {
 section {
 	.text-shadow-light;
  	h1 {
-		font-size: 1.6em;
-		font-family: "adelle", serif;
+		font-size: 1.625em; // 26px / 16px
+		font-family: @font-heading;
 		font-weight: bold;
 		padding-bottom: .5em;
 	}
 	p, label {
-		font-size: 1.05em;
 		padding-bottom: 1em;
-		line-height: 1.6em;
 		color: rgba(0,0,0,.85);
 		&:last-child {
 			padding-bottom: 0;
@@ -162,18 +160,18 @@ section {
 		text-decoration: none;
 		border-bottom: 1px solid rgba(0,0,0,.5);
 		color: @colour-link;
-        &:hover, &:active {
-            color: darken(@colour-link,15%);
-        }
+		&:hover, &:active {
+			color: darken(@colour-link,15%);
+		}
 	}
 }
 
 #jointhelist {
 	.mc-field-group {
-		line-height: 2em;
+		line-height: 2;
 		position: relative;
 		input {
-			padding: .8em;
+			padding: .5em;
 			width: 100%;
 		}
 	}
@@ -182,10 +180,10 @@ section {
 #attendence {
 	li {
 		.inline-block;
-		margin: .24em;
+		margin: .25em;
 		img {
 			.box-shadow;
-			.rounded-corners;
+			.border-radius;
 		}
 		a {
 			border: 0;
@@ -197,11 +195,11 @@ footer {
 	margin: 0 auto;
 	width: 96%;
 	max-width: 40em;
-	padding: 1em .1em;
+	padding: 1em 0;
 	border-top: 1px solid rgba(0,0,0,.5);
 	p {
 		color: rgba(255,255,255,1);
-		font-size: .8em;
+		font-size: @smallfont;
 	}
 	a {
 		color: rgba(255,255,255,1);
@@ -228,7 +226,7 @@ footer {
 .js #map_canvas {
 	height: 300px;
 	width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 1em;
 }
 
 #map-popup-content {
@@ -237,7 +235,7 @@ footer {
 
 .venue-image {
 	float: right;
-	margin-left: 10px;
+	margin-left: 1em;
 }
 
 /* Tweetlist */
@@ -251,7 +249,7 @@ footer {
 	}
 	img {
 		.box-shadow;
-		.rounded-corners;
+		.border-radius;
 		margin-right: 1em;
 		border: 0;
 		position: absolute;
@@ -265,52 +263,47 @@ footer {
 	.tweet {
 		padding-left: 4em;
 		padding-top: .5em;
-		line-height: 1.5;
 	}
 }
 
+
+
+
+/* Start of rules for >600px breakpoint */
 @media screen and (min-width: 601px) and (max-width: 1900px) {
-	#jointhelist {
-		.mc-field-group {
-			line-height: 2em;
-			position: relative;
-			input {
+
+
+#jointhelist {
+	.mc-field-group {
+		input {
 			position: absolute;
 			left: 30%;
-			padding: .4em;
 			max-width: 15em;
-			}
-		}
-	}
-}	
-
-@media screen and (min-width: 1050px) and (max-width: 1900px) {
-	#next {
-		border-bottom: 1px solid rgba(0,0,0,.4);
-		border-right: 1px solid rgba(0,0,0,.4);
-		border-left: 1px solid rgba(255,255,255,.15);
-		position: fixed;
-		left: 5%;
-		top: 0;
-		width: 15%;
-		max-width: 9em;
-		margin-top: -1em;
-		padding-top: 2.65em;
-		background-color: rgba(0,0,0,.6);
-		.rounded-corners;
-		.box-shadow;
-		p {
-			text-align: center;
-			font-size: 2em;
-			color: rgba(255,255,255,.4);
-			span {
-				font-family: "adelle",serif;
-				font-size: .9em;
-				font-weight: bold;
-				color: rgba(255,255,255,.9);
-				line-height: 1.55em;
-				display: block;
-			}
 		}
 	}
 }
+
+
+}
+/* End of rules for >600px breakpoint */
+
+
+
+
+/* Start of rules for >1049px breakpoint */
+@media screen and (min-width: 1050px) and (max-width: 1900px) {
+
+
+#next {
+	position: fixed;
+	left: 5%;
+	top: 0;
+	width: 15%;
+	max-width: 9em;
+    border-top: 0;
+    .border-radius(0 0 .3125em .3125em);
+}
+
+
+}
+/* End of rules for >1049px breakpoint */
