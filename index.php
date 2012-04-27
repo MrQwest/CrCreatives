@@ -16,7 +16,7 @@
 	<meta name="description" content="An open and informal community of designers, developers and digital creatives from in and around Croydon who fancy a break from the screen and chat the web, print, typography and design.">
 	<meta name="author" content="MrQwest and Croydon Creatives">
 
-<!-- We're a friendly bunch, why not come down & say hello! Claim your free drink for reading the source -->
+<!-- We're a friendly bunch, why not come down & say hello! -->
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
@@ -134,15 +134,6 @@
 		<p><a href="http://lanyrd.com/series/croydoncreatives/" title="Our CroydonCreatives Series Page" rel="external">CroydonCreatives on Lanyrd</a>.</p>
 	</section>
 	
-	<section id="stream">
-		<h1>Twitter Stream</h1>
-		<p>We use Twitter a lot - read what is being said about Croydon Creatives</p>
-		<ul id="tweetlist" class="grid_7 tweetlist">
-			<?php require('tweetstream/cctweets.php'); ?>
-		</ul>
-	</section>
-	
-	
 	<footer>
 		<p class="copyright">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a><span class="yellowswitch"></span></p>
 	</footer>
@@ -155,15 +146,6 @@
 		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
-
-	<script>
-	 $(document).ready(function() {
-	 	 $("#tweetlist").load("tweetstream/cctweets.php");
-	   var refreshId = setInterval(function() {
-	     $("#tweetlist").load('tweetstream/cctweets.php');
-	   }, 300000);
-	});
 	</script>
 
 </body>
