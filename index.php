@@ -144,7 +144,7 @@
 	
 	
 	<footer>
-		<p class="copyright">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a><span class="yellowswitch"></span></p>
+		<p class="copyright">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a><span class="yellowswitch"></span></p>
 	</footer>
 
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
