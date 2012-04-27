@@ -63,7 +63,7 @@ function rt_filtered_user($text, $user_filter)
 if ( !file_exists($cache) || filemtime($cache) < ( time() - 30 ) )
 {
     // do the $s->search(), save the result to a variable as before but also write it out to a file for later use
-    $data = $s->search('croydoncreatives OR #crcreatives OR @crcreatives', 100);
+    $data = $s->search('croydoncreatives OR #crcreatives OR @crcreatives', 15);
     
    	// cache data  
    	$cachefile = fopen($cache, 'cc');  
