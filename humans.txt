@@ -15,6 +15,10 @@
 	
 	Additional Optimisation & code OCD: Phil Wareham
 	twitter: @philwareham
+
+	Twitter Stream intergration: Simon Cox
+	twitter: @simoncox
+	// original code from @mrqwest, @simianstudios & @mikestreety
 	
 /* SITE */
 	Language: English
