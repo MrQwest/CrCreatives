@@ -296,7 +296,6 @@ footer .yellowswitch a {
 footer .yellowswitch a.switched {
   color: #000;
 }
-
 /* Google Map */
 .js #map_canvas {
   height: 300px;
@@ -306,7 +305,10 @@ footer .yellowswitch a.switched {
 #map-popup-content {
   min-width: 250px;
 }
-.venue-image {
+#map-popup-content .body {
+  font-size: 0.8125em;
+}
+#map-popup-content .venue-image {
   float: right;
   margin-left: 1em;
 }

@@ -23,7 +23,7 @@
 		);
 
 		var contentString = '<div id="map-popup-content">'+
-	        '<h1>Porter and Sorter</h1>'+
+	        '<h1>Porter &amp; Sorter</h1>'+
 	        '<div class="body">'+
 	        '<img class="venue-image" src="http://t0.gstatic.com/images?q=tbn:ANd9GcQzarDiqEdfAJwzNWxrHCH4-Wk6RFd4JC5TOOl5qSwpagwBx3rTFX8E3vo" alt="Venue">'+
 	        '<span>Station Road East,</span><br>'+
