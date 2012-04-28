@@ -25,12 +25,12 @@
 		var contentString = '<div id="map-popup-content">'+
 	        '<h1>Porter and Sorter</h1>'+
 	        '<div class="body">'+
-	        '<img class="venue-image" src="http://t0.gstatic.com/images?q=tbn:ANd9GcQzarDiqEdfAJwzNWxrHCH4-Wk6RFd4JC5TOOl5qSwpagwBx3rTFX8E3vo" alt="" />'+
+	        '<img class="venue-image" src="http://t0.gstatic.com/images?q=tbn:ANd9GcQzarDiqEdfAJwzNWxrHCH4-Wk6RFd4JC5TOOl5qSwpagwBx3rTFX8E3vo" alt="Venue">'+
 	        '<span>Station Road East,</span><br>'+
 	        '<span>Croydon CR0 6BT,</span><br>'+
 	        '<span>United Kingdom</span><br>'+
-			'<span>+44 20 8688 4296</span><br>'+
-			'<p><a href="http://porterandsorterpub.co.uk">porterandsorterpub.co.uk</a></p>'+
+			'<span>+44 (0)20 8688 4296</span><br>'+
+			'<p><a href="http://porterandsorterpub.co.uk" rel="external">porterandsorterpub.co.uk</a></p>'+
 	        '</div>'+
 	        '</div>';
 
