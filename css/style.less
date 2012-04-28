@@ -72,12 +72,16 @@ a {
 	.transition;
 }
 
+strong {
+    font-weight: bold;
+}
+
 section, header {
 	padding: 1.5em;
 	width: 96%;
 	max-width: 40em;
 	margin: 0 auto 1.5em;
-    border: solid rgba(255,255,255,1);
+	border: solid rgba(255,255,255,1);
 	border-width: 1px 0 0 1px;
 	.box-shadow;
 	.border-radius;
@@ -177,6 +181,10 @@ section {
 	}
 }
 
+.note-required {
+    color: @colour-error;
+}
+
 #attendence {
 	li {
 		.inline-block;
@@ -214,38 +222,47 @@ footer {
 		color: @colour-highlight;
 		float: right;
 		right: 0;
-
-        &.switched {
-            color: #000;
-        }
+		&.switched {
+			color: #000;
+		}
 	}
 }
 
 /* Google Map */
 
 .js #map_canvas {
-	height: 300px;
+	height: 20em;
 	width: 100%;
-	margin-bottom: 1em;
+	border: .25em solid #fff;
+	margin-bottom: 1.5em;
+	.border-radius;
+	.box-shadow;
 }
 
 #map-popup-content {
-	min-width: 250px;
-}
-
-.venue-image {
-	float: right;
-	margin-left: 1em;
+	min-width: 16em;
+	h2 {
+		font-family: @font-heading;
+		padding: 0;
+    }
+	p {
+		font-size: @smallfont;
+		padding: 0;
+	}
+	.venue-image {
+		float: right;
+		margin: .25em 0 0 .25em;
+	}
 }
 
 /* Tweetlist */
 
-#tweetlist{
+#tweetlist {
 	a {
 		border: 0;
 	}
 	li {
-		padding-bottom: 2em;
+		padding-bottom: 1.5em;
 	}
 	img {
 		.box-shadow;
@@ -255,7 +272,7 @@ footer {
 		position: absolute;
 	}
 	span {
-		color: rgba(0,0,0,.4);
+		color: #777;
 	}
 	.twitteruser {
 		padding-left: 4em;
@@ -300,8 +317,8 @@ footer {
 	top: 0;
 	width: 15%;
 	max-width: 9em;
-    border-top: 0;
-    .border-radius(0 0 .3125em .3125em);
+	border-top: 0;
+	.border-radius(0 0 .3125em .3125em);
 }
 
 

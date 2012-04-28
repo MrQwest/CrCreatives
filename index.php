@@ -16,7 +16,7 @@
 	<meta name="description" content="An open and informal community of designers, developers and digital creatives from in and around Croydon who fancy a break from the screen and chat the web, print, typography and design.">
 	<meta name="author" content="MrQwest and Croydon Creatives">
 
-<!-- We're a friendly bunch, why not come down & say hello! Claim your free drink for reading the source -->
+<!-- We are a friendly bunch, why not come down and say hello? Claim your free drink for reading the source! -->
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
@@ -46,7 +46,7 @@
 				<li><a href="#header">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#where">Where</a></li>
-				<li><a href="#jointhelist">Join the List</a></li>
+				<li><a href="#jointhelist">Join the list</a></li>
 				<li><a href="#attendees">Attendees</a></li>
 				<li><a href="#lanyrd">Lanyrd</a></li>
 				<li><a href="http://twitter.com/crcreatives" title="Follow us on twitter" rel="external">@CrCreatives</a></li>
@@ -60,22 +60,22 @@
 	
 	<section id="about">
 		<h1>About</h1>
-		<p>The CroydonCreativ.es is a monthly gathering of web folk from in and around Croydon and further afield (current record distance travelled to a meet is ~160miles). An open and informal community of designers, developers and digital creatives who fancy a break from the screen and chat about what we love. Talk about the web, print, typography and design. Talk about music, your hobbies or sport. Come along and have fun with fellow creatives.</p>
-		<p>If you're interested, why don't you come down and join us one evening?</p>
+		<p>Croydon Creatives is a monthly gathering of web folk from in and around Croydon and further afield (current record distance travelled to a meet is ~160miles). An open and informal community of designers, developers and digital creatives who fancy a break from the screen and chat about what we love. Talk about the web, print, typography and design. Talk about music, your hobbies or sport. Come along and have fun with fellow creatives.</p>
+		<p>If you&#8217;re interested, why don&#8217;t you come down and join us one evening?</p>
 	</section>
 	
 	<section id="where">
 		<h1>Where?</h1>
 		<div id="map_canvas"></div>
-		<p>In our search for a regular venue, we've happened across two decent establishments so we'll alternate between the two. This month, we're meeting at <a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="external">The Porter &amp; Sorter</a>, Billington Road, Croydon, <a href="http://g.co/maps/kjzx6" title="Google maps" rel="external">CR0 6BT</a>.</p>
-		<p>If you're traveling by train, aim for East Croydon station (20 minutes from Victoria / London Bridge rail stations), come out of the main entrance of the station, turn left and left again. Walk through the taxi rank / pickup area and the pub is at the bottom of the short hill.</p>
-		<p>If you're coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at <a href="http://g.co/maps/ctwpy" title="Parking Map" rel="external">this map</a> for locations of the parking in the area and the meeting place.</p>
-		<p>Finally, if you're coming via Tram, you'll want the East Croydon Tram stop. Exit the tram, walk through the taxi rank / pick up area for East Croydon. The Porter &amp; Sorter is at the bottom of the short hill.</p>
+		<p>In our search for a regular venue, we&#8217;ve happened across two decent establishments so we&#8217;ll alternate between the two. This month, we&#8217;re meeting at <a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="external">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="external">CR0 6BT</a>.</p>
+		<p>If you&#8217;re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station, turn left and left again. Walk through the taxi rank/pickup area and the pub is at the bottom of the short hill.</p>
+		<p>If you&#8217;re coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at <a href="http://g.co/maps/ctwpy" title="Parking Map" rel="external">this map</a> for locations of the parking in the area and the meeting place.</p>
+		<p>Finally, if you&#8217;re coming via tram, you&#8217;ll want the East Croydon tram stop. Exit the tram, walk through the taxi rank/pick up area for East Croydon. The Porter &amp; Sorter is at the bottom of the short hill.</p>
 	</section>
 	
 	<section id="jointhelist">
-		<h1>Join the List</h1>
-		<p>We send out e-mails every now and then to let you know when the next gathering or event will take place. If you want to receive these emails, all we need is your name and email address. The Twitter username is just so we can say hello :)</p>
+		<h1>Join the list</h1>
+		<p>We send out emails every now and then to let you know when the next gathering or event will take place. If you want to receive these emails, all we need is your name and email address&#8212;the Twitter username is just so we can say hello :)</p>
 		
 		<!-- MailChimp Signup Form -->
 		<script>
@@ -86,17 +86,17 @@
 		<div id="mc_embed_signup">
 			<form action="http://mrqwest.us2.list-manage.com/subscribe/post?u=c823261dac3f873975b9895fc&amp;id=c1f1938a5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 				<fieldset>
-					<div class="indicate-required">* indicates required</div>
+					<p class="indicate-required"><b class="note-required">*</b> indicates required.</p>
 					<div class="mc-field-group">
-						<label for="mce-EMAIL">Email address <b class="note-required">*</b></label>
+						<label for="mce-EMAIL"><strong>Email address</strong> <b class="note-required">*</b></label>
 						<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 					</div>
 					<div class="mc-field-group">
-						<label for="mce-FNAME">Name <b class="note-required">*</b></label>
+						<label for="mce-FNAME"><strong>Name</strong> <b class="note-required">*</b></label>
 						<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
 					</div>
 					<div class="mc-field-group">
-						<label for="mce-FTWITTER">Twitter username</label>
+						<label for="mce-FTWITTER"><strong>Twitter username</strong></label>
 						<input type="text" value="" name="FTWITTER" class="" id="mce-FTWITTER">
 					</div>
 					<div id="mce-responses">
@@ -115,8 +115,8 @@
 	</section>
 	
 	<section id="attendees">
-		<h1>Roll Call</h1>
-		<p>A list of people who've attended previous <strong>Croydon Creative</strong> gatherings.</p>
+		<h1>Roll call</h1>
+		<p>A list of people who&#8217;ve attended previous Croydon Creatives gatherings:</p>
 		
 		<ul id="attendence">
 		<?php
@@ -130,21 +130,21 @@
 	
 	<section id="lanyrd">
 		<h1>Lanyrd</h1>
-		<p>We love <a href="http://lanyrd.com" title="Lanyrd" rel="external">Lanyrd</a> here, it's a fantastic service for events and conferences which allows people to track or mark as attending each event as well as sharing details.</p>
-		<p>We set up an event on Lanyrd for every CroydonCreatives meet and we love it when new and old friends add their names to the list. If you're planning on coming along to the next CroydonCreatives meet, please do pop your name down - all you need is your Twitter username!</p>
-		<p><a href="http://lanyrd.com/series/croydoncreatives/" title="Our CroydonCreatives Series Page" rel="external">CroydonCreatives on Lanyrd</a>.</p>
+		<p>We love <a href="http://lanyrd.com" title="Lanyrd" rel="external">Lanyrd</a> here, it&#8217;s a fantastic service for events and conferences which allows people to track or mark as attending each event as well as sharing details.</p>
+		<p>We set up an event on Lanyrd for every Croydon Creatives meet and we love it when new and old friends add their names to the list. If you&#8217;re planning on coming along to the next Croydon Creatives meet, please do pop your name down&#8212;all you need is your Twitter username!</p>
+		<p><a href="http://lanyrd.com/series/croydoncreatives/" title="Our Croydon Creatives Series Page" rel="external">Croydon Creatives on Lanyrd</a>.</p>
 	</section>
 	
 	<section id="stream">
-		<h1>Twitter Stream</h1>
-		<p>We use Twitter a lot - read what is being said about Croydon Creatives</p>
+		<h1>Twitter stream</h1>
+		<p>We use Twitter a lot&#8212;read what is being said about Croydon Creatives:</p>
 		<ul id="tweetlist">
 			<?php require('tweetstream/cctweets.php'); ?>
 		</ul>
 	</section>
 
 	<footer>
-		<p class="copyright" data-switch="yellowswitch">&copy; 2011-<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a></p>
+		<p class="copyright" data-switch="yellowswitch">&copy; 2011&#8211;<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a>.</p>
 	</footer>
 
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
