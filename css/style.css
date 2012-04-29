@@ -211,7 +211,7 @@ header nav a:hover {
   font-size: 1.875em;
   color: rgba(255, 255, 255, 0.4);
 }
-#next p span {
+#next time {
   font-family: "adelle", serif;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.9);

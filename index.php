@@ -58,7 +58,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	</header>
 	
 	<section id="next">
-		<p>Next: <span>30th May @ 7pm</span></p>
+		<p>Next: <time datetime="2012-05-30T19:00:00Z">30th May @ 7pm</time></p>
 	</section>
 	
 	<section id="about">
@@ -123,7 +123,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 		
 		<ul id="attendence">
 		<? foreach($attendees as $attendee) : ?>
-		  <li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="external"><img src="http://img.tweetimag.es/i/<?= $attendee ?>" alt="<?= $attendee ?>"></a></li>
+			<li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="external"><img src="http://img.tweetimag.es/i/<?= $attendee ?>" alt="<?= $attendee ?>"></a></li>
 		<? endforeach ?>
 		</ul>
 	
