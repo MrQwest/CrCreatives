@@ -20,6 +20,9 @@
 	twitter: @simoncox
 	// original code from @mrqwest, @simianstudios & @mikestreety
 	
+	Additional PHP Optimisation: Mike Simmonds
+	twitter: @mikesimmonds
+	
 /* SITE */
 	Language: English
 	Doctype: HTML5
