@@ -245,14 +245,6 @@ section a:hover,
 section a:active {
   color: #631e23;
 }
-#jointhelist .mc-field-group {
-  line-height: 2;
-  position: relative;
-}
-#jointhelist .mc-field-group input {
-  padding: .5em;
-  width: 100%;
-}
 .note-required {
   color: #cc0000;
 }
@@ -301,6 +293,186 @@ footer .yellowswitch a {
 }
 footer .yellowswitch a.switched {
   color: #000;
+}
+/* Forms */
+textarea,
+select,
+input[type="password"],
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-clip: padding;
+  -khtml-background-clip: padding-box;
+  -moz-background-clip: padding;
+  -ms-background-clip: padding-box;
+  -o-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #aaa;
+  padding: .3125em;
+  width: 100%;
+  color: #000;
+  font-size: 1em;
+  font-family: "adelle", serif;
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -webkit-background-clip: padding;
+  -khtml-background-clip: padding-box;
+  -moz-background-clip: padding;
+  -ms-background-clip: padding-box;
+  -o-background-clip: padding-box;
+  background-clip: padding-box;
+  cursor: pointer;
+  color: #000;
+  font-size: 1em;
+  font-family: "adelle", serif;
+  line-height: 1.5;
+  text-decoration: none;
+  outline: 0;
+  padding: .5em 1em;
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.66), 0 0 0.75em rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.66), 0 0 0.75em rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.66), 0 0 0.75em rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+  width: auto;
+  border: 1px solid #f2ab05;
+  border-bottom-color: #c08804;
+  background-color: #ffce22;
+  /* Konqueror */
+
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffce22), to(#f2ab05));
+  /* Safari4+, Chrome */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffce22), to(#f2ab05));
+  /* Safari5.1+, Chrome10+ */
+
+  background-image: -webkit-linear-gradient(#ffce22, #f2ab05);
+  /* Firefox3.6 */
+
+  background-image: -moz-linear-gradient(#ffce22, #f2ab05);
+  /* IE10 */
+
+  background-image: -ms-linear-gradient(#ffce22, #f2ab05);
+  /* Opera11.10+ */
+
+  background-image: -o-linear-gradient(#ffce22, #f2ab05);
+  /* CSS3 Compliant */
+
+  background-image: linear-gradient(#ffce22, #f2ab05);
+  /* IE7-9 */
+
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#ffce22', EndColorStr='#f2ab05');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+
+  border-radius: 0 \0;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  /* IE7 vertical alignment fix */
+
+  *padding-top: 2px;
+  *padding-bottom: 0;
+  *overflow: visible;
+}
+button:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+  color: #222;
+  text-decoration: none;
+  background-color: #ffd43c;
+  /* Konqueror */
+
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ffd43c), to(#fab616));
+  /* Safari4+, Chrome */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd43c), to(#fab616));
+  /* Safari5.1+, Chrome10+ */
+
+  background-image: -webkit-linear-gradient(#ffd43c, #fab616);
+  /* Firefox3.6 */
+
+  background-image: -moz-linear-gradient(#ffd43c, #fab616);
+  /* IE10 */
+
+  background-image: -ms-linear-gradient(#ffd43c, #fab616);
+  /* Opera11.10+ */
+
+  background-image: -o-linear-gradient(#ffd43c, #fab616);
+  /* CSS3 Compliant */
+
+  background-image: linear-gradient(#ffd43c, #fab616);
+  /* IE7-9 */
+
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#ffd43c', EndColorStr='#fab616');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+
+  border-radius: 0 \0;
+}
+button:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+input[type="button"]:active {
+  top: 1px;
+  background-color: #f2ab05;
+  /* Konqueror */
+
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f2ab05), to(#ffce22));
+  /* Safari4+, Chrome */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2ab05), to(#ffce22));
+  /* Safari5.1+, Chrome10+ */
+
+  background-image: -webkit-linear-gradient(#f2ab05, #ffce22);
+  /* Firefox3.6 */
+
+  background-image: -moz-linear-gradient(#f2ab05, #ffce22);
+  /* IE10 */
+
+  background-image: -ms-linear-gradient(#f2ab05, #ffce22);
+  /* Opera11.10+ */
+
+  background-image: -o-linear-gradient(#f2ab05, #ffce22);
+  /* CSS3 Compliant */
+
+  background-image: linear-gradient(#f2ab05, #ffce22);
+  /* IE7-9 */
+
+  filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#f2ab05', EndColorStr='#ffce22');
+  /* hack to remove any border-radius in IE9 so we can keep filter gradients */
+
+  border-radius: 0 \0;
+}
+/* IE7 button fixes */
+button {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+input.mce_inline_error {
+  border-color: #cc0000;
+}
+div.mce_inline_error {
+  color: #cc0000;
+}
+#jointhelist .mc-field-group {
+  line-height: 2;
+  position: relative;
+}
+#jointhelist input[type="submit"] {
+  margin-top: 1em;
 }
 /* Google Map */
 .js #map_canvas {
@@ -358,10 +530,20 @@ footer .yellowswitch a.switched {
 }
 /* Start of rules for >600px breakpoint */
 @media screen and (min-width: 601px) and (max-width: 1900px) {
+  #jointhelist .mc-field-group {
+    *zoom: 1;
+  }
+  #jointhelist .mc-field-group:before,
+  #jointhelist .mc-field-group:after {
+    content: "";
+    display: table;
+  }
+  #jointhelist .mc-field-group:after {
+    clear: both;
+  }
   #jointhelist .mc-field-group input {
-    position: absolute;
-    left: 30%;
-    max-width: 15em;
+    float: right;
+    max-width: 66%;
   }
 }
 /* End of rules for >600px breakpoint */
