@@ -88,6 +88,12 @@
 	box-shadow: @shadow;
 }
 
+.box-shadow-multiple(@shadow1: inset 0 1px 0 0 rgba(255,255,255,.66), @shadow2: 0 0 .75em rgba(0,0,0,.3)) {
+	-webkit-box-shadow: @shadow1, @shadow2; // Safari4
+	-moz-box-shadow: @shadow1, @shadow2; // Firefox3.6, Camino2.1
+	box-shadow: @shadow1, @shadow2;
+}
+
 
 // Text shadows
 
