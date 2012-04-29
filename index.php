@@ -1,3 +1,6 @@
+<?
+$attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom');
+?>
 <!DOCTYPE HTML>
 
 <!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
@@ -119,11 +122,9 @@
 		<p>A list of people who&#8217;ve attended previous Croydon Creatives gatherings:</p>
 		
 		<ul id="attendence">
-		<?php
-			$attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom');
-			Foreach($attendees as $attendee) {
-				?> <li class="attendee"><a href="http://twitter.com/<?=$attendee?>" rel="external"><img src="http://img.tweetimag.es/i/<?=$attendee?>" alt="<?=$attendee?>"></a></li><?php 
-		} ?>
+		<? foreach($attendees as $attendee) : ?>
+		  <li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="external"><img src="http://img.tweetimag.es/i/<?= $attendee ?>" alt="<?= $attendee ?>"></a></li>
+		<? endforeach ?>
 		</ul>
 	
 	</section>
@@ -139,12 +140,12 @@
 		<h1>Twitter stream</h1>
 		<p>We use Twitter a lot&#8212;read what is being said about Croydon Creatives:</p>
 		<ul id="tweetlist">
-			<?php require('tweetstream/cctweets.php'); ?>
+		  <? require('tweetstream/cctweets.php') ?>
 		</ul>
 	</section>
 
 	<footer>
-		<p class="copyright" data-switch="yellowswitch">&copy; 2011&#8211;<? echo date("Y"); ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a>.</p>
+		<p class="copyright" data-switch="yellowswitch">&copy; 2011&#8211;<?= date('Y') ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a>.</p>
 	</footer>
 
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
