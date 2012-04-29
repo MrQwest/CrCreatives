@@ -21,7 +21,7 @@ var cc = cc || {
         var switchType = $el.attr('data-switch');
         $el.append('<span class="' + switchType + '"><a href="#" title="' + cc.data[switchType][0] + '">' + cc.data[switchType][0] + '</a></span>');
 
-        $el.on('click',function(event) {
+        $('.yellowswitch').on('click',function(event) {
             var background = $.root.find('div.anystretch');
             var backgroundVisible = background.css('display') == 'block';
 
