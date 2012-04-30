@@ -30,13 +30,16 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
-	<script src="js/portamento.js"></script>
 	<script src="js/crcreatives.js"></script>
 	<script src="http://use.typekit.com/bof8zfa.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-	<script>
-		$.anystretch('images/bg.jpg', {speed:150});
-	</script>
+  <script>
+    try{Typekit.load();}catch(e){}
+
+    // Remove Mailchimp default styles
+    var mc_custom_error_style = '';
+
+    $.anystretch('images/bg.jpg', {speed:150});
+  </script>
 </head>
 <body class="anystretch">
 
@@ -79,11 +82,6 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 		<p>We send out emails every now and then to let you know when the next gathering or event will take place. If you want to receive these emails, all we need is your name and email address&mdash;the Twitter username is just so we can say hello :)</p>
 		
 		<!-- MailChimp Signup Form -->
-		<script>
-			// delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
-			// or fill this in and it will be inlined when errors are generated
-			var mc_custom_error_style = '';
-		</script>
 		<div id="mc_embed_signup">
 			<form action="http://mrqwest.us2.list-manage.com/subscribe/post?u=c823261dac3f873975b9895fc&amp;id=c1f1938a5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 				<fieldset>
