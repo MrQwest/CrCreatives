@@ -468,7 +468,7 @@ div.mce_inline_error {
   color: #cc0000;
 }
 #jointhelist .mc-field-group {
-  line-height: 2;
+  line-height: 2.25;
   position: relative;
 }
 #jointhelist input[type="submit"] {
