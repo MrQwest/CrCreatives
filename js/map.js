@@ -13,6 +13,7 @@
 
 		var mapConfig = {
 			zoom: 10,
+			scrollwheel: false,
 			center: crCreativesLatLong,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
