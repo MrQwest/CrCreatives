@@ -64,21 +64,21 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	<section id="about">
 		<h1>About</h1>
 		<p>Croydon Creatives is a monthly gathering of web folk from in and around Croydon and further afield (current record distance travelled to a meet is ~160miles). An open and informal community of designers, developers and digital creatives who fancy a break from the screen and chat about what we love. Talk about the web, print, typography and design. Talk about music, your hobbies or sport. Come along and have fun with fellow creatives.</p>
-		<p>If you&#8217;re interested, why don&#8217;t you come down and join us one evening?</p>
+		<p>If you&rsquo;re interested, why don&rsquo;t you come down and join us one evening?</p>
 	</section>
 	
 	<section id="where">
 		<h1>Where?</h1>
 		<div id="map_canvas"></div>
-		<p>In our search for a regular venue, we&#8217;ve happened across two decent establishments so we&#8217;ll alternate between the two. This month, we&#8217;re meeting at <a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="external">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="external">CR0 6BT</a>.</p>
-		<p>If you&#8217;re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station, turn left and left again. Walk through the taxi rank/pickup area and the pub is at the bottom of the short hill.</p>
-		<p>If you&#8217;re coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at <a href="http://g.co/maps/ctwpy" title="Parking Map" rel="external">this map</a> for locations of the parking in the area and the meeting place.</p>
-		<p>Finally, if you&#8217;re coming via tram, you&#8217;ll want the East Croydon tram stop. Exit the tram, walk through the taxi rank/pick up area for East Croydon. The Porter &amp; Sorter is at the bottom of the short hill.</p>
+		<p>In our search for a regular venue, we&rsquo;ve happened across two decent establishments so we&rsquo;ll alternate between the two. This month, we&rsquo;re meeting at <a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="external">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="external">CR0 6BT</a>.</p>
+		<p>If you&rsquo;re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station, turn left and left again. Walk through the taxi rank/pickup area and the pub is at the bottom of the short hill.</p>
+		<p>If you&rsquo;re coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at <a href="http://g.co/maps/ctwpy" title="Parking Map" rel="external">this map</a> for locations of the parking in the area and the meeting place.</p>
+		<p>Finally, if you&rsquo;re coming via tram, you&rsquo;ll want the East Croydon tram stop. Exit the tram, walk through the taxi rank/pick up area for East Croydon. The Porter &amp; Sorter is at the bottom of the short hill.</p>
 	</section>
 	
 	<section id="jointhelist">
 		<h1>Join the list</h1>
-		<p>We send out emails every now and then to let you know when the next gathering or event will take place. If you want to receive these emails, all we need is your name and email address&#8212;the Twitter username is just so we can say hello :)</p>
+		<p>We send out emails every now and then to let you know when the next gathering or event will take place. If you want to receive these emails, all we need is your name and email address&mdash;the Twitter username is just so we can say hello :)</p>
 		
 		<!-- MailChimp Signup Form -->
 		<script>
@@ -119,7 +119,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	
 	<section id="attendees">
 		<h1>Roll call</h1>
-		<p>A list of people who&#8217;ve attended previous Croydon Creatives gatherings:</p>
+		<p>A list of people who&rsquo;ve attended previous Croydon Creatives gatherings:</p>
 		
 		<ul id="attendence">
 		<? foreach($attendees as $attendee) : ?>
@@ -131,21 +131,21 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	
 	<section id="lanyrd">
 		<h1>Lanyrd</h1>
-		<p>We love <a href="http://lanyrd.com" title="Lanyrd" rel="external">Lanyrd</a> here, it&#8217;s a fantastic service for events and conferences which allows people to track or mark as attending each event as well as sharing details.</p>
-		<p>We set up an event on Lanyrd for every Croydon Creatives meet and we love it when new and old friends add their names to the list. If you&#8217;re planning on coming along to the next Croydon Creatives meet, please do pop your name down&#8212;all you need is your Twitter username!</p>
+		<p>We love <a href="http://lanyrd.com" title="Lanyrd" rel="external">Lanyrd</a> here, it&rsquo;s a fantastic service for events and conferences which allows people to track or mark as attending each event as well as sharing details.</p>
+		<p>We set up an event on Lanyrd for every Croydon Creatives meet and we love it when new and old friends add their names to the list. If you&rsquo;re planning on coming along to the next Croydon Creatives meet, please do pop your name down&rsquo;all you need is your Twitter username!</p>
 		<p><a href="http://lanyrd.com/series/croydoncreatives/" title="Our Croydon Creatives Series Page" rel="external">Croydon Creatives on Lanyrd</a>.</p>
 	</section>
 	
 	<section id="stream">
 		<h1>Twitter stream</h1>
-		<p>We use Twitter a lot&#8212;read what is being said about Croydon Creatives:</p>
+		<p>We use Twitter a lot&mdash;read what is being said about Croydon Creatives:</p>
 		<ul id="tweetlist">
 		  <? require('tweetstream/cctweets.php') ?>
 		</ul>
 	</section>
 
 	<footer>
-		<p class="copyright" data-switch="yellowswitch">&copy; 2011&#8211;<?= date('Y') ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a>.</p>
+		<p class="copyright" data-switch="yellowswitch">&copy; 2011&ndash;<?= date('Y') ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="external">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="external">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a>.</p>
 	</footer>
 
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
