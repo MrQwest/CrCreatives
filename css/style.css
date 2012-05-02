@@ -206,17 +206,18 @@ header nav a:hover {
   box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.3);
   text-shadow: none;
 }
-#next p {
+#next h1 {
+  font-family: "ff-meta-serif-web-pro", serif;
   text-align: center;
   font-size: 1.875em;
   color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 0;
 }
 #next time {
   font-family: "adelle", serif;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
-  display: block;
 }
 section {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
