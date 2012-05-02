@@ -32,14 +32,14 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
 	<script src="js/crcreatives.js"></script>
 	<script src="http://use.typekit.com/bof8zfa.js"></script>
-  <script>
-    try{Typekit.load();}catch(e){}
+	<script>
+		try{Typekit.load();}catch(e){}
 
-    // Remove Mailchimp default styles
-    var mc_custom_error_style = '';
+		// Remove Mailchimp default styles
+		var mc_custom_error_style = '';
 
-    $.anystretch('images/bg.jpg', {speed:150});
-  </script>
+		$.anystretch('images/bg.jpg', {speed:150});
+	</script>
 </head>
 <body class="anystretch">
 
@@ -136,7 +136,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 		<h1>Twitter stream</h1>
 		<p>We use Twitter a lot&mdash;read what is being said about Croydon Creatives:</p>
 		<ul id="tweetlist">
-		  <? require('tweetstream/cctweets.php') ?>
+			<? require('tweetstream/cctweets.php') ?>
 		</ul>
 	</section>
 

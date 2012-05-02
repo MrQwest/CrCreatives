@@ -16,7 +16,7 @@
 
 .border-radius(@radius: .3125em) { // 5px / 16px
 	-moz-border-radius: @radius; // Firefox3.6, Camino2.1
-	border-radius: @radius;
+	     border-radius: @radius;
 }
 
 
@@ -24,10 +24,10 @@
 
 .transition(@transition: all .25s ease-in-out) {
 	-webkit-transition: @transition;
-	-moz-transition: @transition;
-	-ms-transition: @transition;
-	-o-transition: @transition;
-	transition: @transition;
+	   -moz-transition: @transition;
+	    -ms-transition: @transition;
+	     -o-transition: @transition;
+	        transition: @transition;
 }
 
 
@@ -36,19 +36,19 @@
 .gradient(@colour-gradient-from, @colour-gradient-to) {
 	background-color: @colour-gradient-from;
 	/* Konqueror */
-	background-image: -khtml-gradient(linear, left top, left bottom, from(@colour-gradient-from), to(@colour-gradient-to));
+	background-image:  -khtml-gradient(linear, left top, left bottom, from(@colour-gradient-from), to(@colour-gradient-to));
 	/* Safari4+, Chrome */
 	background-image: -webkit-gradient(linear, left top, left bottom, from(@colour-gradient-from), to(@colour-gradient-to));
 	/* Safari5.1+, Chrome10+ */
 	background-image: -webkit-linear-gradient(@colour-gradient-from, @colour-gradient-to);
 	/* Firefox3.6 */
-	background-image: -moz-linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	background-image:    -moz-linear-gradient(@colour-gradient-from, @colour-gradient-to);
 	/* IE10 */
-	background-image: -ms-linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	background-image:     -ms-linear-gradient(@colour-gradient-from, @colour-gradient-to);
 	/* Opera11.10+ */
-	background-image: -o-linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	background-image:      -o-linear-gradient(@colour-gradient-from, @colour-gradient-to);
 	/* CSS3 Compliant */
-	background-image: linear-gradient(@colour-gradient-from, @colour-gradient-to);
+	background-image:         linear-gradient(@colour-gradient-from, @colour-gradient-to);
 	/* IE7-9 */
 	filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d')",@colour-gradient-from,@colour-gradient-to));
 	/* hack to remove any border-radius in IE9 so we can keep filter gradients */
@@ -60,11 +60,11 @@
 
 .background-clip() {
 	-webkit-background-clip: padding;
-	-khtml-background-clip: padding-box;
-	-moz-background-clip: padding;
-	-ms-background-clip: padding-box;
-	-o-background-clip: padding-box;
-	background-clip: padding-box;
+	 -khtml-background-clip: padding-box;
+	   -moz-background-clip: padding;
+	    -ms-background-clip: padding-box;
+	     -o-background-clip: padding-box;
+	        background-clip: padding-box;
 }
 
 
@@ -84,14 +84,14 @@
 
 .box-shadow(@shadow: 0 0 .75em rgba(0,0,0,.3)) {
 	-webkit-box-shadow: @shadow; // Safari4
-	-moz-box-shadow: @shadow; // Firefox3.6, Camino2.1
-	box-shadow: @shadow;
+	   -moz-box-shadow: @shadow; // Firefox3.6, Camino2.1
+	        box-shadow: @shadow;
 }
 
 .box-shadow-multiple(@shadow1: inset 0 1px 0 0 rgba(255,255,255,.66), @shadow2: 0 0 .75em rgba(0,0,0,.3)) {
 	-webkit-box-shadow: @shadow1, @shadow2; // Safari4
-	-moz-box-shadow: @shadow1, @shadow2; // Firefox3.6, Camino2.1
-	box-shadow: @shadow1, @shadow2;
+	   -moz-box-shadow: @shadow1, @shadow2; // Firefox3.6, Camino2.1
+	        box-shadow: @shadow1, @shadow2;
 }
 
 
@@ -109,8 +109,8 @@
 
 .box-sizing(@box-sizing: border-box) {
 	-webkit-box-sizing: @box-sizing;
-	-moz-box-sizing: @box-sizing;
-	box-sizing: @box-sizing;
+	   -moz-box-sizing: @box-sizing;
+	        box-sizing: @box-sizing;
 }
 
 
