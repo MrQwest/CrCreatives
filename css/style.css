@@ -124,12 +124,6 @@ table {
   border-spacing: 0;
 }
 /* MY STYLE IS IDENTICAL TO NONE =============================== */
-/* THANK YOU PAUL IRISH! */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 html {
   background-color: #ffd955;
 }
@@ -150,6 +144,9 @@ strong {
 }
 section,
 header {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 1.5em;
   width: 96%;
   max-width: 40em;
@@ -206,17 +203,18 @@ header nav a:hover {
   box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.3);
   text-shadow: none;
 }
-#next p {
+#next h1 {
+  font-family: "ff-meta-serif-web-pro", serif;
   text-align: center;
   font-size: 1.875em;
   color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 0;
 }
 #next time {
   font-family: "adelle", serif;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
-  display: block;
 }
 section {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
@@ -300,6 +298,9 @@ select,
 input[type="password"],
 input[type="text"] {
   -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -moz-border-radius: 0;
   border-radius: 0;
   -webkit-background-clip: padding;
@@ -476,6 +477,9 @@ div.mce_inline_error {
 }
 /* Google Map */
 .js #map_canvas {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: 20em;
   width: 100%;
   border: .25em solid #fff;
