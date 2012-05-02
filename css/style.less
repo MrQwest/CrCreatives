@@ -52,12 +52,6 @@ table {
 
 /* MY STYLE IS IDENTICAL TO NONE =============================== */
 
-
-/* THANK YOU PAUL IRISH! */
-* {
-	.box-sizing;
-}
-
 html {
 	background-color: rgba(255,217,85,1);
 }
@@ -77,6 +71,7 @@ strong {
 }
 
 section, header {
+	.box-sizing;
 	padding: 1.5em;
 	width: 96%;
 	max-width: 40em;
@@ -225,6 +220,7 @@ select,
 input[type="password"],
 input[type="text"] {
 	-webkit-appearance: none;
+	.box-sizing;
 	.border-radius(0);
 	.background-clip;
 	border: 1px solid #aaa;
@@ -300,6 +296,7 @@ div.mce_inline_error {
 /* Google Map */
 
 .js #map_canvas {
+	.box-sizing;
 	height: 20em;
 	width: 100%;
 	border: .25em solid #fff;
