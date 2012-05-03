@@ -296,7 +296,8 @@ footer .yellowswitch a.switched {
 textarea,
 select,
 input[type="password"],
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
   -webkit-appearance: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -474,6 +475,7 @@ div.mce_inline_error {
 }
 #jointhelist input[type="submit"] {
   margin-top: 1em;
+  float: right;
 }
 /* Google Map */
 .js #map_canvas {
