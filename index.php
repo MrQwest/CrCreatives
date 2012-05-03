@@ -59,7 +59,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	</header>
 	
 	<section id="next">
-		<p>Next: <time datetime="2012-05-30T19:00:00Z">30th May @ 7pm</time></p>
+		<h1>Next: <time datetime="2012-05-30T19:00:00Z">30th May @ 7pm</time></h1>
 	</section>
 	
 	<section id="about">
