@@ -45,9 +45,9 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 <body class="anystretch">
 
 	<header>
-		<h1><img id="branding" src="images/croydoncreatives.png" alt="croydoncreatives" title="The Croydon Creatives, a bunch of web workers meeting for a pint and a chat. Join us?"></h1>
+		<h1><img src="images/croydoncreatives.png" alt="croydoncreatives" title="The Croydon Creatives, a bunch of web workers meeting for a pint and a chat. Join us?"></h1>
 		<nav>
-			<ul class="mainnav">
+			<ul>
 				<li><a href="#header" title="Home">Home</a></li>
 				<li><a href="#about" title="About Croydon Creatives">About</a></li>
 				<li><a href="#where" title="Where in Croydon do we meet?">Where</a></li>
