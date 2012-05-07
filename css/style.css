@@ -216,6 +216,13 @@ header nav a:hover {
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
 }
+#next a {
+  color: #fff;
+  border-bottom: none;
+}
+#next a:hover {
+  text-decoration: underline;
+}
 section {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
 }
