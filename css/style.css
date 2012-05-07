@@ -132,6 +132,9 @@ body {
   line-height: 1.5;
   padding: 1em;
 }
+img {
+  -ms-interpolation-mode: bicubic;
+}
 a {
   -webkit-transition: color 0.25s ease-in-out;
   -moz-transition: color 0.25s ease-in-out;
@@ -161,15 +164,11 @@ header {
   background-color: rgba(255, 255, 255, 0.8);
   background-image: url("../images/stuccobg.png");
 }
-img#branding {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
 header h1 {
   padding: .5em 0 1.5em;
 }
 header img {
+  display: block;
   max-width: 100%;
 }
 header nav {
@@ -177,11 +176,11 @@ header nav {
   border-top: 1px dotted rgba(0, 0, 0, 0.6);
   padding: 1em 0 0;
 }
-header nav ul.mainnav li {
+header nav li {
   display: inline;
   padding-left: .75em;
 }
-header nav ul.mainnav li:first-child {
+header nav li:first-child {
   padding-left: 0;
 }
 header nav a {

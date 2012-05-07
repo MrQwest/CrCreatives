@@ -62,6 +62,10 @@ body {
 	padding: 1em;
 }
 
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
 a {
 	.transition(color .25s ease-in-out);
 }
@@ -84,24 +88,19 @@ section, header {
 	background-image: url("../images/stuccobg.png");
 }
 
-img#branding {
-	display: block;
-	margin: 0 auto;
-	width: 100%;
-}
-
 header {
 	h1 {
 		padding: .5em 0 1.5em;
 	}
 	img {
+		display: block;
 		max-width: 100%;
 	}
 	nav {
 		font-family: @font-heading;
 		border-top: 1px dotted rgba(0,0,0,.6);
 		padding: 1em 0 0;
-		ul.mainnav li {
+		li {
 			display: inline;
 			padding-left: .75em;
 			&:first-child {
