@@ -46,7 +46,7 @@ var cc = cc || {
         this.twitterLoader();
     },
     'setupNav': function() {
-        $.root.find('ul.mainnav a:not([rel=external])').on('click',function() {
+        $.root.find('nav ul a:not([rel=external])').on('click',function() {
             $.scrollTo($('#'+this.href.split('#')[1]),500);
         });
     },
@@ -86,4 +86,11 @@ var cc = cc || {
 $(function() {
     $.root = $.root || $(document);
     cc.init();
+
+	// test for SVG support via Modernizr, if yes then replace PNG with SVG
+	if (Modernizr.svg) {
+		$('header img').attr('src', function() {
+			return $(this).attr('src').replace('.png', '.svg');
+		});
+	};
 });
