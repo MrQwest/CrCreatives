@@ -44,6 +44,15 @@ var cc = cc || {
         this.setupNav();
         this.themeSwitcher();
         this.twitterLoader();
+
+        // test for SVG support via Modernizr, if yes then replace PNG with SVG
+        // $.root is a cache of the document element jQ object - slightly faster!
+        if (Modernizr.svg) {
+            $.root.find('header img').attr('src', function() {
+                // no need to use jQ here
+                return this.getAttribute('src').replace('.png', '.svg');
+            });
+        };
     },
     'setupNav': function() {
         $.root.find('nav ul a:not([rel=external])').on('click',function() {
@@ -86,11 +95,4 @@ var cc = cc || {
 $(function() {
     $.root = $.root || $(document);
     cc.init();
-
-	// test for SVG support via Modernizr, if yes then replace PNG with SVG
-	if (Modernizr.svg) {
-		$('header img').attr('src', function() {
-			return $(this).attr('src').replace('.png', '.svg');
-		});
-	};
 });
