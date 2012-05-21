@@ -1,4 +1,4 @@
-<?
+<?php
 $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom');
 ?>
 <!DOCTYPE HTML>
@@ -26,7 +26,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 	
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="canonical" href="http://croydoncreativ.es/">
+	<link rel="canonical" href="http://www.croydoncreativ.es/">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
@@ -54,7 +54,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 				<li><a href="#jointhelist" title="Join the Croydon Creatives mailing list and get notified about our upcoming meetups">Join the list</a></li>
 				<li><a href="#attendees" title="Who else attends the local meet up?">Attendees</a></li>
 				<li><a href="#lanyrd" title="We're on Lanyrd too">Lanyrd</a></li>
-				<li><a href="http://twitter.com/crcreatives" title="Follow us on twitter" rel="nofollow" title="Home">@CrCreatives</a></li>
+				<li><a href="http://twitter.com/crcreatives" title="Follow us on twitter" rel="nofollow">@CrCreatives</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -119,9 +119,9 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 		<p>A list of people who&rsquo;ve attended previous Croydon Creatives gatherings:</p>
 		
 		<ul id="attendence">
-		<? foreach($attendees as $attendee) { ?>
+		<?php foreach($attendees as $attendee) { ?>
 			<li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="nofollow" title="<?= $attendee ?>"><img src="http://img.tweetimag.es/i/<?= $attendee ?>" alt="<?= $attendee ?>"></a></li>
-		<? } ?>
+		<?php } ?>
 		</ul>
 	
 	</section>
@@ -137,7 +137,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 		<h1>Twitter stream</h1>
 		<p>We use Twitter a lot&mdash;read what is being said about Croydon Creatives:</p>
 		<ul id="tweetlist">
-			<? require('tweetstream/cctweets.php') ?>
+			<?php require('tweetstream/cctweets.php') ?>
 		</ul>
 	</section>
 
