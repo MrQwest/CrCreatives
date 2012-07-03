@@ -60,7 +60,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	</header>
 	
 	<section id="next">
-		<h1>Next: <time datetime="2012-06-27T19:00:00Z"><a href="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">27th June @ 7pm</a></time></h1>
+		<h1>Next: <time datetime="2012-07-25T19:00:00Z"><a href="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">25th July @ 7pm</a></time></h1>
 	</section>
 	
 	<section id="about">
@@ -114,6 +114,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 
 	</section>
 	
+	<!-- Let's omit this whilst tweetimag.es throws a strop
 	<section id="attendees">
 		<h1>Roll call</h1>
 		<p>A list of people who&rsquo;ve attended previous Croydon Creatives gatherings:</p>
@@ -123,7 +124,8 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 			<li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="nofollow" title="<?= $attendee ?>"><img src="http://img.tweetimag.es/i/<?= $attendee ?>" alt="<?= $attendee ?>"></a></li>
 		<?php } ?>
 		</ul>
-	
+	-->
+
 	</section>
 	
 	<section id="lanyrd">
