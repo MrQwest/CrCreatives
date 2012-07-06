@@ -1,5 +1,5 @@
 <?php
-$attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk');
+$attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk', 'juanfernandes', 'matthillco');
 ?>
 <!DOCTYPE HTML>
 
@@ -114,17 +114,17 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 
 	</section>
 	
-	<!-- Let's omit this whilst tweetimag.es throws a strop
+	<!-- Let's omit this whilst tweetimag.es throws a strop -->
 	<section id="attendees">
 		<h1>Roll call</h1>
 		<p>A list of people who&rsquo;ve attended previous Croydon Creatives gatherings:</p>
 		
 		<ul id="attendence">
 		<?php foreach($attendees as $attendee) { ?>
-			<li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="nofollow" title="<?= $attendee ?>"><img src="http://img.tweetimag.es/i/<?= $attendee ?>" alt="<?= $attendee ?>"></a></li>
+			<li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="nofollow" title="<?= $attendee ?>"><img src="https://api.twitter.com/1/users/profile_image?screen_name=<?= $attendee ?>&size=bigger" alt="<?= $attendee ?>"></a></li>
 		<?php } ?>
 		</ul>
-	-->
+
 
 	</section>
 	
