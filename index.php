@@ -72,10 +72,10 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	<section id="where">
 		<h1>Where?</h1>
 		<div id="map_canvas"></div>
-		<p>In our search for a regular venue, we&rsquo;ve happened across two decent establishments so we&rsquo;ll alternate between the two. This month, we&rsquo;re meeting at <a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="nofollow">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="nofollow">CR0 6BT</a>.</p>
-		<p>If you&rsquo;re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station, turn left and left again. Walk through the taxi rank/pickup area and the pub is at the bottom of the short hill.</p>
+		<p>In our search for a regular venue, we&rsquo;ve happened across two decent establishments so we&rsquo;ll alternate between the two. This month, we&rsquo;re meeting at <!--<a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="nofollow">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="nofollow">CR0 6BT</a>--><a href="http://spreadeaglecroydon.co.uk/" title="The Spreadeagle" rel="nofollow">The Spreadeagle</a>, 39-41 Katharine St, Croydon CR0 1NX. We're trying something different and instead of meeting at the bar, we've booked a function room which is located upstairs.</p>
+		<p>If you&rsquo;re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station, turn right and walk down George St towards Croydon Centre (follow the tram tracks). You'll soon come upon the pedestrianised high street to your right. At this point, turn left and walk for two minutes, the SpreadEagle is on the left.</p>
 		<p>If you&rsquo;re coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at <a href="http://g.co/maps/ctwpy" title="Parking Map" rel="nofollow">this map</a> for locations of the parking in the area and the meeting place.</p>
-		<p>Finally, if you&rsquo;re coming via tram, you&rsquo;ll want the East Croydon tram stop. Exit the tram, walk through the taxi rank/pick up area for East Croydon. The Porter &amp; Sorter is at the bottom of the short hill.</p>
+		<p>Finally, if you&rsquo;re coming via tram, you&rsquo;ll want the George Street tram stop. </p>
 	</section>
 	
 	<section id="jointhelist">
