@@ -1,6 +1,7 @@
 <?php
-$attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk', 'juanfernandes', 'matthillco', 'hollandben', 'tcbarrett', 'jack_franklin', 'croydn', 'rjw1', '98rosjon');
+$attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk', 'juanfernandes', 'matthillco', 'hollandben', 'tcbarrett', 'jack_franklin', 'croydn', 'rjw1', '98rosjon', 'polevaultweb', 'chatters79', 'hazeljmaclaurin', 'allaboutcroydon');
 ?>
+
 <!DOCTYPE HTML>
 
 <!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
@@ -60,7 +61,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	</header>
 	
 	<section id="next">
-		<h1>Next: <time datetime="2012-09-26T19:00:00Z"><a href="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">26th Sept @ 7pm</a></time></h1>
+		<h1>Next: <time datetime="2012-10-31T19:00:00Z"><a href="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">31st Oct @ 7pm</a></time></h1>
 	</section>
 	
 	<section id="about">
@@ -72,8 +73,8 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	<section id="where">
 		<h1>Where?</h1>
 		<div id="map_canvas"></div>
-		<p>In our search for a regular venue, we&rsquo;ve happened across two decent establishments so we&rsquo;ll alternate between the two. This month, we&rsquo;re meeting at <!--<a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="nofollow">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="nofollow">CR0 6BT</a>--><a href="http://spreadeaglecroydon.co.uk/" title="The Spreadeagle" rel="nofollow">The Spreadeagle</a>, 39-41 Katharine St, Croydon CR0 1NX. We're trying something different and instead of meeting at the bar, we've booked a function room which is located upstairs.</p>
-		<p>If you&rsquo;re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station, turn right and walk down George St towards Croydon Centre (follow the tram tracks). You'll soon come upon the pedestrianised high street to your right. At this point, turn left and walk for two minutes, the SpreadEagle is on the left.</p>
+		<p>In our search for a regular venue, we&rsquo;ve happened across two decent establishments so we&rsquo;ll alternate between the two. This month, we&rsquo;re meeting at <!--<a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="nofollow">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="nofollow">CR0 6BT</a>--> <!--<a href="http://spreadeaglecroydon.co.uk/" title="The Spreadeagle" rel="nofollow">The Spreadeagle</a>, 39-41 Katharine St, Croydon CR0 1NX--><a href="http://www.greendragoncroydon.co.uk/" title="The Green Dragon" rel="nofollow">The Green Dragon</a>, 58 High St, Croydon, CR0 1NA. It's literally across the road from the Spread Eagle. We're trying something different and instead of meeting at the bar, we've booked a function room which is located upstairs.</p>
+		<p>If you&rsquo;re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station, turn right and walk down George St towards Croydon Centre (follow the tram tracks). You'll soon come upon the pedestrianised high street to your right. At this point, turn left and walk for two minutes, the Green Dragon is on the right.</p>
 		<p>If you&rsquo;re coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at <a href="http://g.co/maps/ctwpy" title="Parking Map" rel="nofollow">this map</a> for locations of the parking in the area and the meeting place.</p>
 		<p>Finally, if you&rsquo;re coming via tram, you&rsquo;ll want the George Street tram stop. </p>
 	</section>
