@@ -104,12 +104,10 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 blockquote:before,
@@ -145,8 +143,7 @@ a {
 strong {
   font-weight: bold;
 }
-section,
-header {
+section, header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -184,9 +181,11 @@ header nav li:first-child {
   padding-left: 0;
 }
 header nav a {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  font-size: 1.05em;
 }
 header nav a:hover {
   color: #000000;
@@ -231,13 +230,11 @@ section h1 {
   font-weight: bold;
   padding-bottom: .5em;
 }
-section p,
-section label {
+section p, section label {
   padding-bottom: 1em;
   color: rgba(0, 0, 0, 0.85);
 }
-section p:last-child,
-section label:last-child {
+section p:last-child, section label:last-child {
   padding-bottom: 0;
 }
 section a {
@@ -245,8 +242,7 @@ section a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   color: #9e3037;
 }
-section a:hover,
-section a:active {
+section a:hover, section a:active {
   color: #631e23;
 }
 .note-required {
@@ -545,8 +541,7 @@ div.mce_inline_error {
   #jointhelist .mc-field-group {
     *zoom: 1;
   }
-  #jointhelist .mc-field-group:before,
-  #jointhelist .mc-field-group:after {
+  #jointhelist .mc-field-group:before, #jointhelist .mc-field-group:after {
     content: "";
     display: table;
   }
