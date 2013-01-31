@@ -214,6 +214,7 @@ header nav a:hover {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
+  font-weight: 1em;
 }
 #next a {
   color: #fff;
