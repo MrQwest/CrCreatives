@@ -200,6 +200,7 @@ header nav a:hover {
   -moz-box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.3);
   text-shadow: none;
+  font-weight: 600;
 }
 #next h1 {
   font-family: "ff-meta-serif-web-pro", serif;
@@ -227,7 +228,7 @@ section {
 section h1 {
   font-size: 1.625em;
   font-family: "adelle", serif;
-  font-weight: bold;
+  font-weight: 600;
   padding-bottom: .5em;
 }
 section p, section label {
