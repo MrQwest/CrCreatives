@@ -61,7 +61,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 	</header>
 	
 	<section id="next">
-		<h1>Next: <time datetime="2013-06-26T19:00:00Z"><a href="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">26th June @ 7pm</a></time></h1>
+		<h1>Next: <time datetime="2013-07-31T19:00:00Z"><a href="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">31st July @ 7pm</a></time></h1>
 	</section>
 	
 	<section id="about">
@@ -133,7 +133,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 
 	</section>
 	
-	<!-- Let's omit this whilst tweetimag.es throws a strop -->
+	<!-- Let's omit this whilst I fix the code because twitter through a strop and stopped API v1 == 
 	<section id="attendees">
 		<h1>Roll call</h1>
 		<p>A list of people who’ve attended previous Croydon Creatives gatherings:</p>
@@ -142,7 +142,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 		<?php foreach($attendees as $attendee) { ?>
 			<li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="nofollow" title="<?= $attendee ?>"><img src="https://api.twitter.com/1/users/profile_image?screen_name=<?= $attendee ?>&size=bigger" alt="<?= $attendee ?>"></a></li>
 		<?php } ?>
-		</ul>
+		</ul>-->
 
 
 	</section>
