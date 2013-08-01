@@ -154,13 +154,14 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 		<p><a href="http://lanyrd.com/series/croydoncreatives/" title="Our Croydon Creatives Series Page" rel="nofollow">Croydon Creatives on Lanyrd</a>.</p>
 	</section>
 	
+	<!-- alright alright, I need to re-build conftweets so that it works with the new API.  I'm on it ok? jeeez. <3
 	<section id="stream">
 		<h1>Twitter stream</h1>
 		<p>We use Twitter–a lot. Read what is being said about Croydon Creatives:</p>
 		<ul id="tweetlist">
 			<?php require('tweetstream/cctweets.php') ?>
 		</ul>
-	</section>
+	</section> -->
 
 	<footer>
 		<p class="copyright" data-switch="yellowswitch">&copy; 2011-<?= date('Y') ?> CroydonCreativ.es, <a href="http://mrqwest.co.uk" title="MrQwest, a Croydon Web Designer" rel="nofollow">MrQwest</a> and <a href="http://steverydz.com" title="Steve Rydz" rel="nofollow">Steve Rydz</a>. Made by <a href="humans.txt" title="Made by Humans">Humans</a>.</p>
