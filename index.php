@@ -53,7 +53,7 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 				<li><a href="#about" title="About Croydon Creatives">About</a></li>
 				<li><a href="#where" title="Where in Croydon do we meet?">Where</a></li>
 				<li><a href="#jointhelist" title="Join the Croydon Creatives mailing list and get notified about our upcoming meetups">Join the list</a></li>
-				<li><a href="#attendees" title="Who else attends the local meet up?">Attendees</a></li>
+				<!--<li><a href="#attendees" title="Who else attends the local meet up?">Attendees</a></li>-->
 				<li><a href="#lanyrd" title="We're on Lanyrd too">Lanyrd</a></li>
 				<li><a href="http://twitter.com/crcreatives" title="Follow us on twitter" rel="nofollow">@CrCreatives</a></li>
 			</ul>
