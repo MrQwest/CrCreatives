@@ -1,5 +1,7 @@
 <?php
 $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk', 'juanfernandes', 'matthillco', 'hollandben', 'tcbarrett', 'jack_franklin', 'croydn', 'rjw1', '98rosjon', 'polevaultweb', 'chatters79', 'hazeljmaclaurin', 'allaboutcroydon', 'matthewsyard', 'onishiweb', 'sanjaypoyzer', 'futureofcroydon', 'damianwalsh', 'skillshive', 'DegasGuruve', 'frohican', 'ceiga', 'duncanmacweb' );
+
+$attendlink = "http://attending.io/events/cc-may14-br";
 ?>
 
 <!DOCTYPE HTML>
@@ -54,14 +56,14 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 				<li><a href="#where" title="Where in Croydon do we meet?">Where</a></li>
 				<li><a href="#jointhelist" title="Join the Croydon Creatives mailing list and get notified about our upcoming meetups">Join the list</a></li>
 				<!--<li><a href="#attendees" title="Who else attends the local meet up?">Attendees</a></li>-->
-				<li><a href="#lanyrd" title="We're on Lanyrd too">Lanyrd</a></li>
+				<li><a href="<?php echo $attendlink; ?>" title="Attending?">Attend</a></li>
 				<li><a href="http://twitter.com/crcreatives" title="Follow us on twitter" rel="nofollow">@CrCreatives</a></li>
 			</ul>
 		</nav>
 	</header>
 	
 	<section id="next">
-		<h1>Next: <time datetime="2014-04-30T19:00:00Z"><a href="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">30th Apr @ 7pm (ish)</a></time></h1>
+		<h1>Next: <time datetime="2014-05-28T19:00:00Z"><a href="http://attending.io/events/cc-may14-br" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">28th May @ 7pm (ish)</a></time></h1>
 	</section>
 	
 	<section id="about">
@@ -147,11 +149,11 @@ $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'si
 
 	</section>
 	
-	<section id="lanyrd">
-		<h1>Lanyrd</h1>
-		<p>We love <a href="http://lanyrd.com" title="Lanyrd" rel="nofollow">Lanyrd</a> here, it’s a fantastic service for events and conferences which allows people to track or mark as attending each event as well as sharing details.</p>
-		<p>We set up an event on Lanyrd for every Croydon Creatives meet and we love it when new and old friends add their names to the list. If you’re planning on coming along to the next Croydon Creatives meet, please do pop your name down–all you need is your Twitter username!</p>
-		<p><a href="http://lanyrd.com/series/croydoncreatives/" title="Our Croydon Creatives Series Page" rel="nofollow">Croydon Creatives on Lanyrd</a>.</p>
+	<section id="attend">
+		<h1>Attending?</h1>
+		<p>We love <a href="http://attending.io" title="attending.io" rel="nofollow">Attending</a> here, it’s an awesome service for events.</p>
+		<p>We set up an event on Attending for every Croydon Creatives meet and we love it when new and old friends add their names to the list. If you’re planning on coming along to the next Croydon Creatives meet, please do pop your name down–all you need is your Twitter username!</p>
+		<p><a href="<?php echo $attendlink; ?>" title="The Next CroydonCreatives event" rel="nofollow">The next Croydon Creatives on Attending</a>.</p>
 	</section>
 	
 	<!-- alright alright, I need to re-build conftweets so that it works with the new API.  I'm on it ok? jeeez. <3
