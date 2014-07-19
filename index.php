@@ -1,7 +1,7 @@
 <?php
 $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk', 'juanfernandes', 'matthillco', 'hollandben', 'tcbarrett', 'jack_franklin', 'croydn', 'rjw1', '98rosjon', 'polevaultweb', 'chatters79', 'hazeljmaclaurin', 'allaboutcroydon', 'matthewsyard', 'onishiweb', 'sanjaypoyzer', 'futureofcroydon', 'damianwalsh', 'skillshive', 'DegasGuruve', 'frohican', 'ceiga', 'duncanmacweb' );
 
-$attendlink = "http://attending.io/events/cc-june14";
+$attendlink = "http://attending.io/events/cc-july14";
 ?>
 
 <!DOCTYPE HTML>
@@ -27,10 +27,10 @@ $attendlink = "http://attending.io/events/cc-june14";
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
-	
+
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="canonical" href="http://www.croydoncreativ.es/">
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
 	<script src="js/modernizr.js"></script>
@@ -61,25 +61,25 @@ $attendlink = "http://attending.io/events/cc-june14";
 			</ul>
 		</nav>
 	</header>
-	
+
 	<section id="next">
-		<h1>Next: <time datetime="2014-06-25T19:00:00Z"><a href="<?php echo $attendlink; ?>" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">25th June @ 7pm (ish)</a></time></h1>
+		<h1>Next: <time datetime="2014-07-23T19:00:00Z"><a href="<?php echo $attendlink; ?>" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">23rd July @ 7pm (ish)</a></time></h1>
 	</section>
-	
+
 	<section id="about">
 		<h1>About</h1>
 		<p>Croydon Creatives is a monthly gathering of web folk from in and around Croydon and further afield (current record distance travelled to a meet is ~160miles). An open and informal community of designers, developers and digital creatives who fancy a break from the screen and to chat about what we love. Talk about the web, print, typography and design. Talk about music, your hobbies or sport. Come along and have fun with fellow creatives.</p>
 		<p>If you’re interested, why don’t you come down and join us one evening?</p>
 	</section>
-	
+
 	<section id="where">
 		<h1>Where?</h1>
 		<div id="map_canvas"></div>
-		<p>In our search for a regular venue, we’ve happened across two decent establishments so we’ll alternate between the two. This month, we’re meeting at 
+		<p>In our search for a regular venue, we’ve happened across two decent establishments so we’ll alternate between the two. This month, we’re meeting at
 
 			<!-- various locations are used and instead of repeating addresses etc, we'll just comment out the ones we're not using for that month -->
 
-			<!--<a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="nofollow">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="nofollow">CR0 6BT</a>--> 
+			<!--<a href="http://www.porterandsorterpub.co.uk/" title="The Porter &amp; Sorter" rel="nofollow">The Porter &amp; Sorter</a>, Billington Road, Croydon, Surrey <a href="http://g.co/maps/kjzx6" title="Google maps" rel="nofollow">CR0 6BT</a>-->
 
 			<!--<a href="http://spreadeaglecroydon.co.uk/" title="The Spreadeagle" rel="nofollow">The Spreadeagle</a>, 39-41 Katharine St, Croydon CR0 1NX -->
 
@@ -88,7 +88,7 @@ $attendlink = "http://attending.io/events/cc-june14";
 			<a href="http://matthewsyard.com/" title="Matthews Yard" rel="nofollow">Matthews Yard</a>, 1 Matthews Yard (off Surrey St), Croydon, <a href="http://goo.gl/maps/KRFhK" title="Directions from East Croydon">CR0 1FF</a>
 
 		.</p>
-		<p>If you’re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station, 
+		<p>If you’re traveling by train, aim for East Croydon station (20 minutes from Victoria/London Bridge rail stations), come out of the main entrance of the station,
 
 			<!--turn right and walk down George St towards Croydon Centre (follow the tram tracks). You’ll soon come upon the pedestrianised high street to your right. At this point, turn left and walk for two minutes, the Spread Eagle is on the left-->
 
@@ -98,11 +98,11 @@ $attendlink = "http://attending.io/events/cc-june14";
 		<p>If you’re coming by car, then the closest parking is Fairfield Halls Car Park. Take a look at <a href="http://g.co/maps/ctwpy" title="Parking Map" rel="nofollow">this map</a> for locations of the parking in the area and the meeting place.</p>
 		<p>Finally, if you’re coming via tram, you’ll want the George Street tram stop.</p>
 	</section>
-	
+
 	<section id="jointhelist">
 		<h1>Join the list</h1>
 		<p>We send out emails every now and then to let you know when the next gathering or event will take place. If you want to receive these emails, all we need is your name and email address–the Twitter username is just so we can say hello :)</p>
-		
+
 		<!-- MailChimp Signup Form -->
 		<div id="mc_embed_signup">
 			<form action="http://mrqwest.us2.list-manage.com/subscribe/post?u=c823261dac3f873975b9895fc&amp;id=c1f1938a5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
@@ -127,19 +127,19 @@ $attendlink = "http://attending.io/events/cc-june14";
 					<div>
 						<input type="submit" value="Subscribe" title="Subscribe to the mailing list" name="subscribe" id="mc-embedded-subscribe" class="btn">
 					</div>
-				</fieldset>	
+				</fieldset>
 			</form>
 		</div>
-		
+
 		<!-- /MailChimp Signup Form -->
 
 	</section>
-	
-	<!-- Let's omit this whilst I fix the code because twitter through a strop and stopped API v1 == 
+
+	<!-- Let's omit this whilst I fix the code because twitter through a strop and stopped API v1 ==
 	<section id="attendees">
 		<h1>Roll call</h1>
 		<p>A list of people who’ve attended previous Croydon Creatives gatherings:</p>
-		
+
 		<ul id="attendence">
 		<?php foreach($attendees as $attendee) { ?>
 			<li class="attendee"><a href="http://twitter.com/<?= $attendee ?>" rel="nofollow" title="<?= $attendee ?>"><img src="https://api.twitter.com/1/users/profile_image?screen_name=<?= $attendee ?>&size=bigger" alt="<?= $attendee ?>"></a></li>
@@ -148,14 +148,14 @@ $attendlink = "http://attending.io/events/cc-june14";
 
 
 	</section>
-	
+
 	<section id="attend">
 		<h1>Attending?</h1>
 		<p>We love <a href="http://attending.io" title="attending.io" rel="nofollow">Attending</a> here, it’s an awesome service for events.</p>
 		<p>We set up an event on Attending for every Croydon Creatives meet and we love it when new and old friends add their names to the list. If you’re planning on coming along to the next Croydon Creatives meet, please do pop your name down–all you need is your Twitter username!</p>
 		<p><a href="<?php echo $attendlink; ?>" title="The Next CroydonCreatives event" rel="nofollow">The next Croydon Creatives on Attending</a>.</p>
 	</section>
-	
+
 	<!-- alright alright, I need to re-build conftweets so that it works with the new API.  I'm on it ok? jeeez. <3
 	<section id="stream">
 		<h1>Twitter stream</h1>
