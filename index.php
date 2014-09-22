@@ -1,7 +1,7 @@
 <?php
 $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk', 'juanfernandes', 'matthillco', 'hollandben', 'tcbarrett', 'jack_franklin', 'croydn', 'rjw1', '98rosjon', 'polevaultweb', 'chatters79', 'hazeljmaclaurin', 'allaboutcroydon', 'matthewsyard', 'onishiweb', 'sanjaypoyzer', 'futureofcroydon', 'damianwalsh', 'skillshive', 'DegasGuruve', 'frohican', 'ceiga', 'duncanmacweb' );
 
-$attendlink = "http://attending.io/events/cc-aug14";
+$attendlink = "http://attending.io/events/cc-sept14";
 ?>
 
 <!DOCTYPE HTML>
@@ -63,7 +63,7 @@ $attendlink = "http://attending.io/events/cc-aug14";
 	</header>
 
 	<section id="next">
-		<h1>Next: <time datetime="2014-08-27T19:00:00Z"><a href="<?php echo $attendlink; ?>" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">27th Aug @ 7pm (ish)</a></time></h1>
+		<h1>Next: <time datetime="2014-09-24T19:00:00Z"><a href="<?php echo $attendlink; ?>" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">24th Sept @ 7pm (ish)</a></time></h1>
 	</section>
 
 	<section id="about">
