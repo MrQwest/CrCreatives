@@ -2,7 +2,7 @@
 // sadly now a defunct list of those who attended. We did show avatars of those who turned up but twitter changed their API.
 $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk', 'juanfernandes', 'matthillco', 'hollandben', 'tcbarrett', 'jack_franklin', 'croydn', 'rjw1', '98rosjon', 'polevaultweb', 'chatters79', 'hazeljmaclaurin', 'allaboutcroydon', 'matthewsyard', 'onishiweb', 'sanjaypoyzer', 'futureofcroydon', 'damianwalsh', 'skillshive', 'DegasGuruve', 'frohican', 'ceiga', 'duncanmacweb' );
 
-$attendlink = "http://attending.io/events/cc-sept14";
+$attendlink = "http://attending.io/events/cc-oct14";
 
 // the current date & time
   $now = date(DATE_ATOM);
