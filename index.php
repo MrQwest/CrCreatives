@@ -1,7 +1,50 @@
 <?php
+// sadly now a defunct list of those who attended. We did show avatars of those who turned up but twitter changed their API.
 $attendees = array('crcreatives', 'mrqwest', 'simianstudios', 'alexjsexton', 'simoncox', 'fulljames', 'rchasteauneuf', 'mikestreety', 'clivewalker', 'dynamic50', 'kevin_davies', 'standardistas', 'pauladamdavis', 'paulmist', 'weshuk', 'bossingtonimage', 'steverydz', 'tarunhari', 'danblundell', 'mkstix6', 'blinkbrian', 'ayoungh', 'amberweinberg', 'jamieknight', 'dkewal', 'laurakalbag', 'mrgeorgegray', 'epixelstudio', 'khamiltonuk', 'dean_faulkner', 'locombia25', 'smartin_hazel', 'mikesimmonds', 'jef_lau', 'eightmadefour', 'philwareham', 'shanegriffiths', 'wstn', 'designsbylexi', 'kulor', 'englishtom', 'martingoldie', 'rglepper', 'linglau64', 'sparrwhawk', 'juanfernandes', 'matthillco', 'hollandben', 'tcbarrett', 'jack_franklin', 'croydn', 'rjw1', '98rosjon', 'polevaultweb', 'chatters79', 'hazeljmaclaurin', 'allaboutcroydon', 'matthewsyard', 'onishiweb', 'sanjaypoyzer', 'futureofcroydon', 'damianwalsh', 'skillshive', 'DegasGuruve', 'frohican', 'ceiga', 'duncanmacweb' );
 
 $attendlink = "http://attending.io/events/cc-sept14";
+
+// the current date & time
+  $now = date(DATE_ATOM);
+  
+  // Here's the array of dates for the event
+  $dates = array(
+  	date(DATE_ATOM, mktime(19, 30, 0, 09, 24, 2014)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 08, 31, 2014)),
+  	date(DATE_ATOM, mktime(19, 30, 0, 10, 29, 2014)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 11, 26, 2014)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 12, 17, 2014)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 01, 28, 2015)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 02, 25, 2015)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 03, 25, 2015)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 04, 29, 2015)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 05, 27, 2015)), 
+  	date(DATE_ATOM, mktime(19, 30, 0, 06, 24, 2015))
+  );
+ 
+  // initialise empty array for future events
+  $futuredates = array();
+ 
+  // the foreach
+  foreach($dates as $date){
+    // if the date from the $dates array is older than today...
+  	if ($date < $now ){
+  		// donothing
+  	} else {
+  	  // if it's a future event, push the date into $futuredates
+  		array_push($futuredates, $date);
+  	};
+  };
+ 
+  // and bosh, convert the first line from the array as a string, ie: the next event.
+  $nextDate = strtotime($futuredates[0]); 
+
+  // time as a string for <time> element.
+  $timeNextDate = date("c",$nextDate);
+
+  // date as human readable, 29th Oct
+  $showNextDate = date("jS M",$nextDate);
+
 ?>
 
 <!DOCTYPE HTML>
@@ -63,7 +106,7 @@ $attendlink = "http://attending.io/events/cc-sept14";
 	</header>
 
 	<section id="next">
-		<h1>Next: <time datetime="2014-09-24T19:00:00Z"><a href="<?php echo $attendlink; ?>" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/">24th Sept @ 7pm (ish)</a></time></h1>
+		<h1>Next: <time datetime="<?php echo $timeNextDate; ?>"><a href="<?php echo $attendlink; ?>" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/"><?php echo $showNextDate; ?> @ 7pm (ish)</a></time></h1>
 	</section>
 
 	<section id="about">
