@@ -1,50 +1,15 @@
 <?php
-// the current date & time
-  $now = date(DATE_ATOM);
-  
-  // Here's the array of dates for the event
-  $dates = array(
-  	date(DATE_ATOM, mktime(19, 30, 0, 09, 24, 2014)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 08, 31, 2014)),
-  	date(DATE_ATOM, mktime(19, 30, 0, 10, 29, 2014)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 11, 26, 2014)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 12, 17, 2014)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 01, 28, 2015)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 02, 25, 2015)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 03, 25, 2015)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 04, 29, 2015)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 05, 27, 2015)), 
-  	date(DATE_ATOM, mktime(19, 30, 0, 06, 24, 2015))
-  );
- 
-  // initialise empty array for future events
-  $futuredates = array();
- 
-  // the foreach
-  foreach($dates as $date){
-    // if the date from the $dates array is older than today...
-  	if ($date < $now ){
-  		// donothing
-  	} else {
-  	  // if it's a future event, push the date into $futuredates
-  		array_push($futuredates, $date);
-  	};
-  };
- 
-  // and bosh, convert the first line from the array as a string, ie: the next event.
-  $nextDate = strtotime($futuredates[0]); 
+
+  $nextDate = strtotime('Last wednesday of this month');
 
   // time as a string for <time> element.
-  $timeNextDate = date("c",$nextDate);
+  $timeNextDate = date("c", strtotime('7pm'));
 
   // date as human readable, 29th Oct
   $showNextDate = date("jS M",$nextDate);
-
   $attendingDate = date("My", $nextDate);
 
-  $attendlink = "http://attending.io/events/cc-".$attendingDate;
-
-?>
+  $attendlink = "http://attending.io/events/cc-".$attendingDate; ?>
 
 <!DOCTYPE HTML>
 
