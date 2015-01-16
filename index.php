@@ -1,6 +1,13 @@
 <?php
 
-  $nextDate = strtotime('Last wednesday of this month');
+	function check_url($url) {
+	   $headers = @get_headers($url);
+	   $headers = (is_array($headers)) ? implode( "\n ", $headers) : $headers;
+
+	   return (bool)preg_match('#^HTTP/.*\s+[(200|301|302)]+\s#i', $headers);
+	}
+
+  $nextDate = strtotime('Last wednesday of next month');
 
   // time as a string for <time> element.
   $timeNextDate = date("c", strtotime('7pm'));
@@ -9,7 +16,11 @@
   $showNextDate = date("jS M",$nextDate);
   $attendingDate = date("My", $nextDate);
 
-  $attendlink = "http://attending.io/events/cc-".$attendingDate; ?>
+  $attendlink = "http://attending.io/events/cc-".$attendingDate;
+
+  $validurl = (check_url($attendlink)) ? true :false;
+
+?>
 
 <!DOCTYPE HTML>
 
@@ -62,14 +73,20 @@
 				<li><a href="#about" title="About Croydon Creatives">About</a></li>
 				<li><a href="#where" title="Where in Croydon do we meet?">Where</a></li>
 				<li><a href="#jointhelist" title="Join the Croydon Creatives mailing list and get notified about our upcoming meetups">Join the list</a></li>
-				<li><a href="<?php echo $attendlink; ?>" title="Attending?">Attend</a></li>
+				<?php if($validurl) : ?><li><a href="<?php echo $attendlink; ?>" title="Attending?">Attend</a></li><?php endif; ?>
 				<li><a href="http://twitter.com/crcreatives" title="Follow us on twitter" rel="nofollow">@CrCreatives</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<section id="next">
-		<h1>Next: <time datetime="<?php echo $timeNextDate; ?>"><a href="<?php echo $attendlink; ?>" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/"><?php echo $showNextDate; ?> @ 7pm (ish)</a></time></h1>
+		<h1>Next: 
+			<time datetime="<?php echo $timeNextDate; ?>">
+				<?php if($validurl) : ?><a href="<?php echo $attendlink; ?>" data-old="http://lanyrd.com/series/croydoncreatives/save-to-calendar/"><?php endif; ?>
+					<?php echo $showNextDate; ?> @ 7pm (ish)
+				<?php if($validurl) : ?></a><?php endif; ?>
+			</time>
+		</h1>
 	</section>
 
 	<section id="about">
@@ -128,7 +145,7 @@
 		<h1>Attending?</h1>
 		<p>We love <a href="http://attending.io" title="attending.io" rel="nofollow">Attending</a> here, it’s an awesome service for events.</p>
 		<p>We set up an event on Attending for every Croydon Creatives meet and we love it when new and old friends add their names to the list. If you’re planning on coming along to the next Croydon Creatives meet, please do pop your name down–all you need is your Twitter username!</p>
-		<p><a href="<?php echo $attendlink; ?>" title="The Next CroydonCreatives event" rel="nofollow">The next Croydon Creatives on Attending</a>.</p>
+		<?php if($validurl) : ?><p><a href="<?php echo $attendlink; ?>" title="The Next CroydonCreatives event" rel="nofollow">The next Croydon Creatives on Attending</a>.</p><?php endif; ?>
 	</section>
 
 	<footer>
